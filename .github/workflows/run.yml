@@ -1,4 +1,4 @@
-name: Daily Collect
+name: Collect
 
 on:
   workflow_dispatch:
