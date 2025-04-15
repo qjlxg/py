@@ -46,7 +46,7 @@ jobs:
         git add data/all_clash.txt
         git push origin main --force
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') "
-        
+        git pull origin main --rebase || git rebase --abort
     - name: 推送更改
       uses:  ad-m/github-push-action@master
       with:
