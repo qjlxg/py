@@ -3,6 +3,7 @@
 name: Sync File to Another Repo
 
 on:
+  workflow_dispatch:
   push:
     branches: [ main ]
     paths: 
