@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇯🇵 日本高速06 - 红薯云, server: e-jp2vmksj.dongfangyihao.xyz, port: 42327, type: vmess, uuid: 0cc6ef73-1dd8-4cd5-918a-2b2cccb15f0d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

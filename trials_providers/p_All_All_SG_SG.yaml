@@ -1,10 +1,9 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇸🇬 新加坡01 - 红薯云, server: aoj.dongfangyihao.xyz, port: 42204, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡02 - 红薯云, server: aps.dongfangyihao.xyz, port: 42205, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: '🇸🇬 [trojan]新加坡[2.8x]-高端14 - 赛博云机场', server: sg14.731732.xyz, port: 443, type: trojan, password: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, sni: sg14.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: sg14.731732.xyz}}, udp: true}
-- {name: 🇸🇬 新加坡1无中转 - 跨境电商云, server: 176.221.19.170, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇸🇬 新加坡2无中转 - 跨境电商云, server: 176.221.19.131, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇸🇬 新加坡1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34311, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇸🇬 新加坡2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34312, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: '🇸🇬 [ss]联通线路-新加坡01 - 机场', server: nnertn.airport.lat, port: 29488, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇸🇬 [ss]联通线路-新加坡02 - 机场', server: nnertn.airport.lat, port: 47026, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇸🇬 [ss]直连-新加坡01 - 机场', server: sg1.airport.lat, port: 10000, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇸🇬 [ss]直连-新加坡02 - 机场', server: sg01.airport.lat, port: 20850, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: 🇸🇬 新加坡1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: '🇺🇸 [ss]联通线路-美国01 - 机场', server: nnertn.airport.lat, port: 26111, type: ss, cipher: chacha20-ietf-poly1305, password: 4516a365-fbaa-4dc2-bd58-5b71775d667a, udp: true}
+- {name: '🇺🇸 [ss]直连-美国01 - 机场', server: us01.airport.lat, port: 20830, type: ss, cipher: chacha20-ietf-poly1305, password: 4516a365-fbaa-4dc2-bd58-5b71775d667a, udp: true}

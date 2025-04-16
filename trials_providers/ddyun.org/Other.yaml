@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: '🇩🇪 [vmess]德国-1x - 多多云机场', server: deu2.895896.xyz, port: 80, type: vmess, uuid: 0946164d-7605-40e1-8fb8-75eb7ed1b6c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: deu2.895896.xyz}}, udp: true}
+- {name: '🇫🇷 [vmess]法国-1x - 多多云机场', server: fr1.895896.xyz, port: 80, type: vmess, uuid: 0946164d-7605-40e1-8fb8-75eb7ed1b6c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr1.895896.xyz}}, udp: true}

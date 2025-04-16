@@ -1,62 +1,43 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇩🇪 DE - Ajiaxi, server: de.ajiaxi.cyou, port: 8877, type: vmess, uuid: 3dcde424-38eb-4ecc-ad54-eb54ca059369, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: '🇳🇱 [trojan]荷兰[1x]-电联5 - 赛博云机场', server: smdu5.731732.xyz, port: 443, type: trojan, password: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, sni: smdu5.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: smdu5.731732.xyz}}, udp: true}
-- {name: '🇩🇪 [vmess]德国[0.75x]-福利 - 赛博云机场', server: decf1.426624.xyz, port: 80, type: vmess, uuid: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: decf1.426624.xyz}}, udp: true}
-- {name: '🇦🇪 [vmess]阿联酋[0.75x]-福利 - 赛博云机场', server: alq.426624.xyz, port: 80, type: vmess, uuid: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alq.426624.xyz}}, udp: true}
-- {name: '🇨🇱 [vmess]智利[0.75x]-福利 - 赛博云机场', server: zl.731732.xyz, port: 80, type: vmess, uuid: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zl.731732.xyz}}, udp: true}
-- {name: '🇧🇷 [vmess]巴西[0.75x]-福利 - 赛博云机场', server: brcf1.731732.xyz, port: 80, type: vmess, uuid: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: brcf1.731732.xyz}}, udp: true}
-- {name: 🇻🇳 越南1无中转 - 跨境电商云, server: 185.126.134.76, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南2无中转 - 跨境电商云, server: 185.126.134.43, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南3无中转 - 跨境电商云, server: 185.126.134.56, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南4无中转 - 跨境电商云, server: 185.126.134.247, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转1 - 跨境电商云, server: 188.64.106.252, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转2 - 跨境电商云, server: 188.64.106.231, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转3 - 跨境电商云, server: 188.64.106.169, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转4 - 跨境电商云, server: 188.64.106.182, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转5 - 跨境电商云, server: 188.64.106.13, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转6 - 跨境电商云, server: 188.64.106.212, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转7 - 跨境电商云, server: 188.64.106.85, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转8 - 跨境电商云, server: 188.64.106.101, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚无中转9 - 跨境电商云, server: 188.64.106.92, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国1无中转 - 跨境电商云, server: 154.91.200.232, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国2无中转 - 跨境电商云, server: 62.112.143.197, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国3无中转 - 跨境电商云, server: 62.112.143.130, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国4无中转 - 跨境电商云, server: 62.112.143.49, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国5无中转 - 跨境电商云, server: 62.112.143.108, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国6无中转 - 跨境电商云, server: 62.112.143.103, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国7无中转 - 跨境电商云, server: 62.112.143.85, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国8无中转 - 跨境电商云, server: 62.112.143.147, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国9无中转 - 跨境电商云, server: 62.112.143.177, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国10无中转 - 跨境电商云, server: 62.112.143.249, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国11无中转 - 跨境电商云, server: 62.112.143.157, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国12无中转 - 跨境电商云, server: 62.112.143.111, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国13无中转 - 跨境电商云, server: 62.112.143.62, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇩🇪 德国1无中转 - 跨境电商云, server: 181.214.205.123, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34308, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34315, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南3 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34317, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇻🇳 越南4 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34447, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34114, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34319, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚3 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34440, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚4 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34441, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚5 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34442, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚6 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34444, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚7 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34445, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚8 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34446, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇲🇾 马来西亚9 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34447, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34105, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34309, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国3 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34337, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国4 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34335, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国5 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34322, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国6 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34323, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国7 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34324, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国8 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34325, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国9 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34331, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国10 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34332, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国11 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34334, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国12 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34436, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇹🇭 泰国13 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34451, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: '🇩🇪 [ss]联通线路-德国01 - 机场', server: nnertn.airport.lat, port: 36617, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇳🇱 [ss]联通线路-荷兰01 - 机场', server: nnertn.airport.lat, port: 26491, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇸🇪 [ss]联通线路-瑞典01 - 机场', server: nnertn.airport.lat, port: 51492, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇹🇷 [ss]联通线路-土耳其01 - 机场', server: nnertn.airport.lat, port: 35694, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇲🇾 [ss]联通线路-马来西亚01 - 机场', server: nnertn.airport.lat, port: 37083, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇦🇪 [ss]联通线路-阿联酋01 - 机场', server: nnertn.airport.lat, port: 42699, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇻🇳 [ss]联通线路-越南01 - 机场', server: nnertn.airport.lat, port: 51196, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇹🇭 [ss]联通线路-泰国01 - 机场', server: nnertn.airport.lat, port: 31579, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇰🇿 [ss]联通线路-哈萨克斯坦01 - 机场', server: nnertn.airport.lat, port: 34738, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇮🇩 [ss]联通线路-印尼01 - 机场', server: nnertn.airport.lat, port: 11009, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇪🇸 [ss]联通线路-西班牙01 - 机场', server: nnertn.airport.lat, port: 40912, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇧🇷 [ss]联通线路-巴西01 - 机场', server: nnertn.airport.lat, port: 19711, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇵🇹 [ss]联通线路-葡萄牙01 - 机场', server: nnertn.airport.lat, port: 22947, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇷🇴 [ss]联通线路-罗马尼亚01 - 机场', server: nnertn.airport.lat, port: 38270, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇨🇭 [ss]联通线路-瑞士01 - 机场', server: nnertn.airport.lat, port: 59895, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇳🇴 [ss]联通线路-挪威01 - 机场', server: nnertn.airport.lat, port: 34015, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇮🇹 [ss]联通线路-意大利01 - 机场', server: nnertn.airport.lat, port: 42610, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇷🇺 [ss]联通线路-俄罗斯01 - 机场', server: nnertn.airport.lat, port: 22524, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇫🇮 [ss]联通线路-芬兰01 - 机场', server: nnertn.airport.lat, port: 14037, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇩🇪 [ss]直连-德国01 - 机场', server: de01.airport.lat, port: 20200, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇳🇱 [ss]直连-荷兰01 - 机场', server: nl01.airport.lat, port: 20740, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇸🇪 [ss]直连-瑞典01 - 机场', server: se01.airport.lat, port: 22490, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇹🇷 [ss]直连-土耳其01 - 机场', server: tr01.airport.lat, port: 20820, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇲🇾 [ss]直连-马来西亚01 - 机场', server: my01.airport.lat, port: 20020, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇦🇪 [ss]直连-阿联酋01 - 机场', server: ae01.airport.lat, port: 20911, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇻🇳 [ss]直连-越南01 - 机场', server: vn01.airport.lat, port: 20870, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇹🇭 [ss]直连-泰国01 - 机场', server: th01.airport.lat, port: 20180, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇰🇿 [ss]直连-哈萨克斯坦01 - 机场', server: kz01.airport.lat, port: 20890, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇮🇩 [ss]直连-印尼01 - 机场', server: id01.airport.lat, port: 20902, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇪🇸 [ss]直连-西班牙01 - 机场', server: es01.airport.lat, port: 20600, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇧🇷 [ss]直连-巴西01 - 机场', server: br01.airport.lat, port: 20060, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇵🇹 [ss]直连-葡萄牙01 - 机场', server: pt01.airport.lat, port: 20610, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇷🇴 [ss]直连-罗马尼亚01 - 机场', server: ro01.airport.lat, port: 20750, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇨🇭 [ss]直连-瑞士01 - 机场', server: ch01.airport.lat, port: 20640, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇳🇴 [ss]直连-挪威01 - 机场', server: no01.airport.lat, port: 20660, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇮🇹 [ss]直连-意大利01 - 机场', server: it01.airport.lat, port: 20080, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇷🇺 [ss]直连-俄罗斯01 - 机场', server: ru01.airport.lat, port: 20580, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: '🇫🇮 [ss]直连-芬兰01 - 机场', server: fi01.airport.lat, port: 20810, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- {name: ℹ️ 官网续费:xh2024.top - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 备用:xh2025.top - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

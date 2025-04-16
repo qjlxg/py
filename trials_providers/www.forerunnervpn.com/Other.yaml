@@ -1,9 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇰🇷 韩国 1 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44014, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇰🇷 韩国 2 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44015, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇰🇷 韩国 3 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44014, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇰🇷 韩国 4 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44015, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇬🇧 英国 1 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44019, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇬🇧 英国 2 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44019, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}

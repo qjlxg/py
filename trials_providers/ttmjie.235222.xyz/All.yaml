@@ -1,0 +1,8 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇲🇱 节点来源：https://yun.yuncat.top 永久邮箱：xxntmctx@gmali.com - 云猫加速, server: ccdnf-2.211678.xyz, port: 80, type: vmess, uuid: 420e01e1-97db-4a4b-9ac1-be0ac86002ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/vmntls?ed=2560', headers: {Host: vmntls-old-us-1.211678.xyz}}, udp: true}
+- {name: vm-支持所有设备 - 云猫加速, server: ccdnf.211678.xyz, port: 80, type: vmess, uuid: 420e01e1-97db-4a4b-9ac1-be0ac86002ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/vmntls?ed=2560', headers: {Host: vmntls-old-us-1.211678.xyz}}, udp: true}
+- {name: vm-1-支持所有设备 - 云猫加速, server: ccdnf-1.211678.xyz, port: 80, type: vmess, uuid: 420e01e1-97db-4a4b-9ac1-be0ac86002ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/vmntls?ed=2560', headers: {Host: vmntls-old-us-1.211678.xyz}}, udp: true}
+- {name: vm-2-支持所有设备 - 云猫加速, server: ccdnf-2.211678.xyz, port: 80, type: vmess, uuid: 420e01e1-97db-4a4b-9ac1-be0ac86002ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/vmntls?ed=2560', headers: {Host: vmntls-old-us-1.211678.xyz}}, udp: true}
+- {name: vm-fzjh-3-支持所有设备 - 云猫加速, server: ccdnf-2.211678.xyz, port: 80, type: vmess, uuid: 420e01e1-97db-4a4b-9ac1-be0ac86002ad, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/vmntls?ed=2560', headers: {Host: fzjh.211678.xyz}}, udp: true}

@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇺🇸 US-Trojan - Ajiaxi, server: us.ajiaxi.cyou, port: 1541, type: trojan, password: 3dcde424-38eb-4ecc-ad54-eb54ca059369, sni: us.ajiaxi.cyou, skip-cert-verify: true, udp: true}

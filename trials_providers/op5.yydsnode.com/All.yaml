@@ -1,6 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇸🇬 新加坡01 - 红薯云, server: aoj.dongfangyihao.xyz, port: 42204, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡02 - 红薯云, server: aps.dongfangyihao.xyz, port: 42205, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇯🇵 日本高速06 - 红薯云, server: e-jp2vmksj.dongfangyihao.xyz, port: 42327, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

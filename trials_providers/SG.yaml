@@ -1,46 +1,25 @@
 %YAML 1.1
 ---
 proxies:
-- &id012 {name: 🇸🇬 新加坡01 - 红薯云, server: aoj.dongfangyihao.xyz, port: 42204, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id013 {name: 🇸🇬 新加坡02 - 红薯云, server: aps.dongfangyihao.xyz, port: 42205, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- &id001 {name: 🇸🇬  新加坡  01 ｜₁ₓ - MBOXX, server: aambx01sg.dorabbb.top, port: 45514, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id002 {name: 🇸🇬  新加坡  02 ｜₁ₓ - MBOXX, server: aambx01sg.dorabbb.top, port: 34533, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id003 {name: 🇸🇬  新加坡  03 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 34592, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id004 {name: 🇸🇬  新加坡  04 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34586, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id005 {name: 🇸🇬  新加坡  05 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34590, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id006 {name: 🇸🇬  新加坡  06 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34595, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
-- &id007 {name: '🇸🇬 [trojan]新加坡[2.8x]-高端14 - 赛博云机场', server: sg14.731732.xyz, port: 443, type: trojan, password: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, sni: sg14.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: sg14.731732.xyz}}, udp: true}
+- &id005 {name: 🇸🇬 【VIP解锁】国际专线 · 新加坡SG · 146 · VIP - Newflix加速器, server: 1.1.1.1, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 8b44e6ea-ffdd-46a3-b5b2-faa42677959c, udp: true}
+- &id001 {name: '🇸🇬 [ss]联通线路-新加坡01 - 机场', server: nnertn.airport.lat, port: 29488, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- &id002 {name: '🇸🇬 [ss]联通线路-新加坡02 - 机场', server: nnertn.airport.lat, port: 47026, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- &id003 {name: '🇸🇬 [ss]直连-新加坡01 - 机场', server: sg1.airport.lat, port: 10000, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
+- &id004 {name: '🇸🇬 [ss]直连-新加坡02 - 机场', server: sg01.airport.lat, port: 20850, type: ss, cipher: chacha20-ietf-poly1305, password: 8a2fe6eb-9fcd-4f09-b655-5b5681063e7e, udp: true}
 - *id001
 - *id002
 - *id003
 - *id004
+- {name: 🇸🇬 亚洲|新加坡cc22 - 青龙加速器, server: rk2.nynode0.cc, port: 50983, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡cc - 青龙加速器, server: rk1.nynode0.cc, port: 20643, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡cc2 - 青龙加速器, server: rk1.nynode0.cc, port: 12745, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡cc3 - 青龙加速器, server: rk1.nynode0.cc, port: 58430, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡01 - 青龙加速器, server: gd.qlrk0.cc, port: 14682, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡02 - 青龙加速器, server: gd.qlrk0.cc, port: 31190, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- {name: 🇸🇬 亚洲|新加坡03 - 青龙加速器, server: ah.qlrk0.cc, port: 26822, type: ss, cipher: chacha20-ietf-poly1305, password: 4f0bd68e-22f1-4abf-b3fc-4504069fac11, udp: true}
+- &id006 {name: 🇸🇬 新加坡1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- &id007 {name: 🇸🇬 新加坡2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: 6a8567ae-c33c-4a86-8014-de1a6da6b237, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- *id005
 - *id005
 - *id006
-- *id001
-- *id002
-- *id003
-- *id004
-- *id005
-- *id006
-- {name: 🇸🇬 新加坡 1 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44010, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇸🇬 新加坡 2 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44011, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇸🇬 新加坡 3 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44010, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
-- {name: 🇸🇬 新加坡 4 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44011, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
 - *id007
-- &id008 {name: 🇸🇬 新加坡1无中转 - 跨境电商云, server: 176.221.19.170, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- &id009 {name: 🇸🇬 新加坡2无中转 - 跨境电商云, server: 176.221.19.131, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- &id010 {name: 🇸🇬 新加坡1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34311, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- &id011 {name: 🇸🇬 新加坡2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34312, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
-- {name: 🇸🇬 （专线）新加坡 - 小火箭, server: 120.232.217.221, port: 54311, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 新加坡🇸🇬 - Miao Planet, server: sg01.miaonode.com, port: 8787, type: ss, cipher: chacha20-ietf-poly1305, password: 5581db6d-2cce-4c4c-b611-14bd884728e4, udp: true}
-- *id008
-- *id009
-- *id010
-- *id011
-- {name: 🇸🇬 新加坡-01 - 美丽新世界, server: cname03-ncpbbyhazxjnwkrx.222schweinshaxe.com, port: 51041, type: ss, cipher: chacha20-ietf-poly1305, password: e79557c4-5f95-4e11-bd27-4cdf2edee01b, udp: true}
-- {name: 🇸🇬 新加坡1_GPT_NF - 松果, server: xxx.btmbxxx.top, port: 12411, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡2 - 松果, server: xxx.btmbxxx.top, port: 12412, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡3_GPT - 松果, server: xxx.btmbxxx.top, port: 12413, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡4_网页 - 松果, server: xxx.btmbxxx.top, port: 12414, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- *id012
-- *id013
