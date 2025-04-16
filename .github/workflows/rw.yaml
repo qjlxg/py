@@ -40,7 +40,7 @@ jobs:
           cp -f data/clash.yaml aggregator/data/all_clash.txt
           cp -f data/clash.yaml aggregator/data/api.txt
           cp -f data/clash.yaml aggregator/data/transporter.txt
-          cp -f data/clash.yaml aggregator/data/v2ray.txt
+          cp -f ./Long_term_subscription_num   aggregator/data/v2ray.txt
 
       - name: Commit and push changes
         env:
