@@ -1,0 +1,22 @@
+name: Push to Another Repository
+
+# 触发条件，可根据需要进行调整
+on:
+ push:
+   branches:
+     - main
+
+jobs:
+ build:
+   runs-on: ubuntu-latest
+
+   steps:
+     - name: Checkout code
+       uses: actions/checkout@v2
+
+     - name: Push to another repository
+       env:
+         ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+       run: |
+         git remote add target <target_repo_url>
+         git push target HEAD:refs/heads/main
