@@ -36,11 +36,11 @@ jobs:
           # 创建目标目录（如果不存在）
           mkdir -p aggregator/data
           # 强制复制文件
-          cat data/clash.yaml >> aggregator/data/clash.yaml
-          cat data/all_clash.txt >> aggregator/data/all_clash.txt
-          cat data/api.txt >> aggregator/data/api.txt
-          cat data/transporter.txt >> aggregator/data/transporter.txt
-          cat data/Long_term_subscription_num >> aggregator/data/v2ray.txt
+          cp -f data/clash.yaml aggregator/data/clash.yaml
+          cp -f data/clash.yaml aggregator/data/all_clash.txt
+          cp -f data/clash.yaml aggregator/data/api.txt
+          cp -f data/clash.yaml aggregator/data/transporter.txt
+          cp -f ./Long_term_subscription_num   aggregator/data/v2ray.txt
           
       - name: Commit and push changes
         env:
