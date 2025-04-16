@@ -36,12 +36,7 @@ def convert_multiple_to_base64(urls):
 
 if __name__ == "__main__":
     urls = [
-        "https://raw.githubusercontent.com/qjlxg/py/refs/heads/main/trial.yaml?token=GHSAT0AAAAAADBYZWPHNVSLSSSZI2E2LYCWZ77NDTA",
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "https://raw.githubusercontent.com/qjlxg/py/refs/heads/main/trial.yaml?token=GHSAT0AAAAAADBYZWPHNVSLSSSZI2E2LYCWZ77NDTA"
+        
     ]
     convert_multiple_to_base64(urls)
