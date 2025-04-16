@@ -42,7 +42,7 @@ jobs:
         env:
           TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
         run: |
-          cd 目标仓库名
+          cd sub
           git add data/clash.yaml
           git commit -m "Sync clash.yaml from source repo (Commit: ${{ github.sha }})"
           git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/sub.git main
