@@ -1,7 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: '🇸🇬 [ss]联通线路-新加坡01 - 机场', server: nnertn.airport.lat, port: 29488, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]联通线路-新加坡02 - 机场', server: nnertn.airport.lat, port: 47026, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]直连-新加坡01 - 机场', server: sg1.airport.lat, port: 10000, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]直连-新加坡02 - 机场', server: sg01.airport.lat, port: 20850, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}

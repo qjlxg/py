@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: riben - XBoard, server: 35.78.182.68, port: 4000, tfo: true, type: vmess, uuid: 7a7c6e74-e3a4-440a-9f38-551d18c31da4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /123123123, headers: {Host: baidu.com}}, udp: true}

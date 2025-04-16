@@ -1,0 +1,15 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇭🇰hk-ss - 北大青鸟, server: hk.qwerqaq.xyz, port: 10001, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇯🇵jp-ss - 北大青鸟, server: jp.qwerqaq.xyz, port: 10002, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇺🇸us-ss - 北大青鸟, server: us.qwerqaq.xyz, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇬🇧uk-ss - 北大青鸟, server: uk.qwerqaq.xyz, port: 10004, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇭🇰hk-vr - 北大青鸟, server: hk1.qwerqaq.xyz, port: 10005, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: hk1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇯🇵jp-vr - 北大青鸟, server: jp1.qwerqaq.xyz, port: 10006, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: jp1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇺🇸us-vr - 北大青鸟, server: us1.qwerqaq.xyz, port: 10007, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: us1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇬🇧uk-vr - 北大青鸟, server: uk1.qwerqaq.xyz, port: 10008, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: uk1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇭🇰hk-tr - 北大青鸟, server: hk2.qwerqaq.xyz, port: 10009, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: hk2.qwerqaq.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵jp-tr - 北大青鸟, server: jp2.qwerqaq.xyz, port: 10010, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: jp2.qwerqaq.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸us-tr - 北大青鸟, server: us2.qwerqaq.xyz, port: 10011, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: us2.qwerqaq.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇬🇧uk-tr - 北大青鸟, server: uk2.qwerqaq.xyz, port: 10012, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: uk2.qwerqaq.xyz, skip-cert-verify: true, udp: true}

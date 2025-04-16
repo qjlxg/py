@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: '🇯🇵 [trojan]日本[3.2x]-IIJ高端3 - 赛博云机场', server: jp12.426624.xyz, port: 443, type: trojan, password: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, sni: jp12.426624.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: jp12.426624.xyz}}, udp: true}

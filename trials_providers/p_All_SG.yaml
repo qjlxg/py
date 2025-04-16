@@ -1,10 +1,14 @@
 %YAML 1.1
 ---
 proxies:
-- {name: '🇸🇬 [ss]联通线路-新加坡01 - 机场', server: nnertn.airport.lat, port: 29488, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]联通线路-新加坡02 - 机场', server: nnertn.airport.lat, port: 47026, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]直连-新加坡01 - 机场', server: sg1.airport.lat, port: 10000, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [ss]直连-新加坡02 - 机场', server: sg01.airport.lat, port: 20850, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇸🇬 [trojan]新加坡[2.8x]-高端14 - 赛博云机场', server: sg14.731732.xyz, port: 443, type: trojan, password: 6cb02ec7-0bc6-43d0-b1ac-5f1d5d157e33, sni: sg14.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: sg14.731732.xyz}}, udp: true}
-- {name: 🇸🇬 新加坡直连-vmess - 起点带宽不限速, server: v7.nmcf.me, port: 8000, type: vmess, uuid: 5c89358e-c10a-4380-abfb-666c27d8440b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: www.bing.com}}, udp: true}
-- {name: 🇸🇬 IEPL专线-新加坡-1 - 起点带宽不限速, server: 59.42.247.189, port: 8001, type: vmess, uuid: 5c89358e-c10a-4380-abfb-666c27d8440b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: v3.nmcf.me}}, udp: true}
+- {name: 🇸🇬 新加坡 1 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44010, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇸🇬 新加坡 2 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44011, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇸🇬 新加坡 3 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44010, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇸🇬 新加坡 4 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44011, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇸🇬 （专线）新加坡 - 小火箭, server: 120.232.217.221, port: 54311, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 新加坡🇸🇬 - Miao Planet, server: sg01.miaonode.com, port: 8787, type: ss, cipher: chacha20-ietf-poly1305, password: 5581db6d-2cce-4c4c-b611-14bd884728e4, udp: true}
+- {name: 🇸🇬 新加坡-01 - 美丽新世界, server: cname03-ncpbbyhazxjnwkrx.222schweinshaxe.com, port: 51041, type: ss, cipher: chacha20-ietf-poly1305, password: e79557c4-5f95-4e11-bd27-4cdf2edee01b, udp: true}
+- {name: 🇸🇬 新加坡1_GPT_NF - 松果, server: xxx.btmbxxx.top, port: 12411, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡2 - 松果, server: xxx.btmbxxx.top, port: 12412, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡3_GPT - 松果, server: xxx.btmbxxx.top, port: 12413, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡4_网页 - 松果, server: xxx.btmbxxx.top, port: 12414, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

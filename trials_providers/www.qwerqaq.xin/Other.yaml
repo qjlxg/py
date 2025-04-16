@@ -1,0 +1,6 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇬🇧uk-ss - 北大青鸟, server: uk.qwerqaq.xyz, port: 10004, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇬🇧uk-vr - 北大青鸟, server: uk1.qwerqaq.xyz, port: 10008, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: uk1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇬🇧uk-tr - 北大青鸟, server: uk2.qwerqaq.xyz, port: 10012, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: uk2.qwerqaq.xyz, skip-cert-verify: true, udp: true}

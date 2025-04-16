@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: tj - TT airport, server: bw1.258936.xyz, port: 20443, type: trojan, password: da0c88eb-56d0-47c1-bb72-8fd486814594, skip-cert-verify: true, network: ws, ws-opts: {path: ''}, udp: true}

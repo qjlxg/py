@@ -1,0 +1,8 @@
+%YAML 1.1
+---
+proxies:
+- {name: '🇳🇱 [trojan]荷兰[1x]-电联5 - 赛博云机场', server: smdu5.731732.xyz, port: 443, type: trojan, password: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, sni: smdu5.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: smdu5.731732.xyz}}, udp: true}
+- {name: '🇩🇪 [vmess]德国[0.75x]-福利 - 赛博云机场', server: decf1.426624.xyz, port: 80, type: vmess, uuid: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: decf1.426624.xyz}}, udp: true}
+- {name: '🇦🇪 [vmess]阿联酋[0.75x]-福利 - 赛博云机场', server: alq.426624.xyz, port: 80, type: vmess, uuid: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: alq.426624.xyz}}, udp: true}
+- {name: '🇨🇱 [vmess]智利[0.75x]-福利 - 赛博云机场', server: zl.731732.xyz, port: 80, type: vmess, uuid: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: zl.731732.xyz}}, udp: true}
+- {name: '🇧🇷 [vmess]巴西[0.75x]-福利 - 赛博云机场', server: brcf1.731732.xyz, port: 80, type: vmess, uuid: c91d6449-e93b-42c9-a6d6-ed6de6b5ef0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: brcf1.731732.xyz}}, udp: true}

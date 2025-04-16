@@ -1,5 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 'ℹ️ [ss]🔄如果全部超时，刷新订阅 - 寻乐云', server: 1, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: 419204b7-9a7b-406f-91d6-1a50ccb4cee3, udp: true}
-- {name: 'ℹ️ [ss]📢电报  t.me/xunlecloud - 寻乐云', server: 1, port: 1, type: ss, cipher: chacha20-ietf-poly1305, password: 419204b7-9a7b-406f-91d6-1a50ccb4cee3, udp: true}

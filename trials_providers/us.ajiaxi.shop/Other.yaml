@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇩🇪 DE - Ajiaxi, server: de.ajiaxi.cyou, port: 8877, type: vmess, uuid: 5b7f382d-2144-4642-8e6c-b80c1c7d6cd0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

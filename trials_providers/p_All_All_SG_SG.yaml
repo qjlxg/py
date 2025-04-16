@@ -1,5 +1,10 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇸🇬 （专线）新加坡 - 小火箭, server: 120.232.217.221, port: 54311, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇸🇬 IEPL · 新加坡SG · 204 - 悟空加速器, server: 183.240.116.150, port: 16114, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇸🇬 新加坡01 - 红薯云, server: aoj.dongfangyihao.xyz, port: 42204, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡02 - 红薯云, server: aps.dongfangyihao.xyz, port: 42205, type: vmess, uuid: d7ac2540-d88e-4fe0-bfd6-0a9f184d22ea, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: '🇸🇬 [trojan]新加坡[2.8x]-高端14 - 赛博云机场', server: sg14.731732.xyz, port: 443, type: trojan, password: ba3cf22b-8f7e-4bac-aaa8-634fe47546a6, sni: sg14.731732.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: '', headers: {Host: sg14.731732.xyz}}, udp: true}
+- {name: 🇸🇬 新加坡1无中转 - 跨境电商云, server: 176.221.19.170, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇸🇬 新加坡2无中转 - 跨境电商云, server: 176.221.19.131, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇸🇬 新加坡1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34311, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇸🇬 新加坡2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34312, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}

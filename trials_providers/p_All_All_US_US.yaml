@@ -1,12 +1,8 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇺🇸 美国-波士顿 - 小火箭, server: 183.240.228.220, port: 55133, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 美国-旧金山 - 小火箭, server: 183.240.228.220, port: 52217, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 (专线)美国-洛杉矶 - 小火箭, server: 36.150.94.53, port: 16106, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 （专线）美国 - 小火箭, server: 183.240.180.26, port: 55188, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 美国-家庭IPB - 小火箭, server: 183.240.187.175, port: 56217, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 IEPL · 美国US · 220 - 悟空加速器, server: 183.240.116.150, port: 16109, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- {name: 🇺🇸 IEPL · 美国US · 40 - 悟空加速器, server: 183.240.116.150, port: 16110, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- {name: 🇺🇸 IEPL · 美国US · 36 - 悟空加速器, server: 183.240.116.150, port: 16111, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- {name: 🇺🇸 IEPL · 美国US · 88 - 悟空加速器, server: 183.240.116.150, port: 16112, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇺🇸 US-Trojan - Ajiaxi, server: us.ajiaxi.cyou, port: 1541, type: trojan, password: 3dcde424-38eb-4ecc-ad54-eb54ca059369, sni: us.ajiaxi.cyou, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国1无中转 - 跨境电商云, server: 38.182.100.129, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇺🇸 美国2无中转 - 跨境电商云, server: 108.165.171.133, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇺🇸 美国1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34313, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇺🇸 美国2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34336, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}

@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 美国🇺🇸 - Miao Planet, server: us.miaonode.com, port: 8787, type: ss, cipher: chacha20-ietf-poly1305, password: 5581db6d-2cce-4c4c-b611-14bd884728e4, udp: true}

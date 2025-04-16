@@ -1,38 +1,74 @@
 %YAML 1.1
 ---
 proxies:
-- {name: '🇺🇸 [ss]联通线路-美国01 - 机场', server: nnertn.airport.lat, port: 26111, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- {name: '🇺🇸 [ss]直连-美国01 - 机场', server: us01.airport.lat, port: 20830, type: ss, cipher: chacha20-ietf-poly1305, password: e76cb58a-6c71-4edc-a017-7b05f507325b, udp: true}
-- &id001 {name: 🇺🇸 美国-波士顿 - 小火箭, server: 183.240.228.220, port: 55133, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- &id002 {name: 🇺🇸 美国-旧金山 - 小火箭, server: 183.240.228.220, port: 52217, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- &id003 {name: 🇺🇸 (专线)美国-洛杉矶 - 小火箭, server: 36.150.94.53, port: 16106, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- &id004 {name: 🇺🇸 （专线）美国 - 小火箭, server: 183.240.180.26, port: 55188, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- &id005 {name: 🇺🇸 美国-家庭IPB - 小火箭, server: 183.240.187.175, port: 56217, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
-- {name: 🇺🇸 美国-拉斯维加斯-001 - 漏网之鱼, server: 45.147.201.231, port: 20013, type: vmess, uuid: 0d467ffb-e4d5-432e-9bf5-ead5c64255aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-- {name: 🇺🇸 美国-拉斯维加斯-002 - 漏网之鱼, server: 45.147.201.231, port: 23071, type: vmess, uuid: 0d467ffb-e4d5-432e-9bf5-ead5c64255aa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-- {name: 🇺🇸 美国-v6|03 - 悦云, server: dmitv62.616626.xyz, port: 22306, type: vmess, uuid: 883df20e-4219-4595-9364-274f5b1cbc16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国-v6|04 - 悦云, server: dmitv63.616626.xyz, port: 22307, type: vmess, uuid: 883df20e-4219-4595-9364-274f5b1cbc16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国-v6|05 - 悦云, server: dmitv64.616626.xyz, port: 22309, type: vmess, uuid: 883df20e-4219-4595-9364-274f5b1cbc16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国01 - 悦云, server: vir732.189.ovh, port: 10026, type: trojan, password: 883df20e-4219-4595-9364-274f5b1cbc16, sni: vir732.189.ovh, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国02 - 悦云, server: vir11.189.ovh, port: 10022, type: trojan, password: 883df20e-4219-4595-9364-274f5b1cbc16, sni: vir11.189.ovh, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国-v6|01 - 悦云, server: crun6.668918.xyz, port: 22308, type: vmess, uuid: 883df20e-4219-4595-9364-274f5b1cbc16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国04 - 悦云, server: layercloud.189.ovh, port: 10021, type: trojan, password: 883df20e-4219-4595-9364-274f5b1cbc16, sni: layercloud.189.ovh, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国05 - 悦云, server: advin.189.ovh, port: 10027, type: trojan, password: 883df20e-4219-4595-9364-274f5b1cbc16, sni: advin.189.ovh, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 美国07 - 悦云, server: vir694.189.ovh, port: 10021, type: trojan, password: 883df20e-4219-4595-9364-274f5b1cbc16, sni: vir694.189.ovh, skip-cert-verify: true, udp: true}
-- {name: 🇺🇸 vmess-直连-US - 起点带宽不限速, server: v6.nmcf.me, port: 48421, type: vmess, uuid: 5c89358e-c10a-4380-abfb-666c27d8440b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: www.bing.com}}, udp: true}
-- {name: 🇺🇸 美国直连-vmess - 起点带宽不限速, server: v5.nmcf.me, port: 8002, type: vmess, uuid: 5c89358e-c10a-4380-abfb-666c27d8440b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: www.bing.com}}, udp: true}
-- {name: 🇺🇸 IEPL专线-美国-1 - 起点带宽不限速, server: 59.42.247.189, port: 8008, type: vmess, uuid: 5c89358e-c10a-4380-abfb-666c27d8440b, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nmkj, headers: {Host: v3.nmcf.me}}, udp: true}
-- {name: 🇺🇸 美国直连-Trojan - 起点带宽不限速, server: v12.nmcf.me, port: 443, type: trojan, password: 5c89358e-c10a-4380-abfb-666c27d8440b, sni: v12.nmcf.me, skip-cert-verify: true, udp: true}
+- &id004 {name: 🇺🇸  美国  01 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 45541, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id005 {name: 🇺🇸  美国  02 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 34521, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id006 {name: 🇺🇸  美国  03 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 47737, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id007 {name: 🇺🇸  美国  04 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 47733, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id008 {name: 🇺🇸  美国  05 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 47922, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id009 {name: 🇺🇸  美国  06 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 47927, type: ss, cipher: chacha20-ietf-poly1305, password: 692086fe-c2bc-41ca-a117-1111b551b403, udp: true}
+- &id010 {name: 🇺🇸 US-Trojan - Ajiaxi, server: us.ajiaxi.cyou, port: 1541, type: trojan, password: 3dcde424-38eb-4ecc-ad54-eb54ca059369, sni: us.ajiaxi.cyou, skip-cert-verify: true, udp: true}
+- &id001 {name: 🇺🇸 美国|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27832, type: vmess, uuid: 8ac74c6b-b99d-4a38-9f80-66f3d30dd41f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id002 {name: 🇺🇸 美国|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27832, type: vmess, uuid: 8ac74c6b-b99d-4a38-9f80-66f3d30dd41f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id003 {name: 🇺🇸 美国|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27832, type: vmess, uuid: 8ac74c6b-b99d-4a38-9f80-66f3d30dd41f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
 - *id001
 - *id002
 - *id003
 - *id004
 - *id005
-- &id006 {name: 🇺🇸 IEPL · 美国US · 220 - 悟空加速器, server: 183.240.116.150, port: 16109, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- &id007 {name: 🇺🇸 IEPL · 美国US · 40 - 悟空加速器, server: 183.240.116.150, port: 16110, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- &id008 {name: 🇺🇸 IEPL · 美国US · 36 - 悟空加速器, server: 183.240.116.150, port: 16111, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
-- &id009 {name: 🇺🇸 IEPL · 美国US · 88 - 悟空加速器, server: 183.240.116.150, port: 16112, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
 - *id006
 - *id007
 - *id008
 - *id009
+- *id004
+- *id005
+- *id006
+- *id007
+- *id008
+- *id009
+- {name: 🇺🇸 美国 1 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44016, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国 2 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44017, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国 3 - Forerunner, server: zu.zz01.forerunnerip.online, port: 44018, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国 4 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44016, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国 5 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44017, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国 6 - Forerunner, server: zu.zz02.forerunnerip.online, port: 44018, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国家宽 01丨2x US - Forerunner, server: zu.zz01.forerunnerip.online, port: 44020, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- {name: 🇺🇸 美国家宽 02丨2x US - Forerunner, server: zu.zz02.forerunnerip.online, port: 44020, type: ss, cipher: aes-128-gcm, password: 0f5ebce7-61a3-42e2-ae0d-6f56bfde2861, udp: true}
+- *id010
+- &id011 {name: 🇺🇸 美国1无中转 - 跨境电商云, server: 38.182.100.129, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- &id012 {name: 🇺🇸 美国2无中转 - 跨境电商云, server: 108.165.171.133, port: 10050, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- &id013 {name: 🇺🇸 美国1 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34313, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- &id014 {name: 🇺🇸 美国2 - 跨境电商云, server: iii1ilili1lilil1ilili.tikshopiiiiiiiii.com, port: 34336, type: ss, cipher: chacha20-ietf-poly1305, password: 33d745d5-0e0c-4ba4-a6cb-5d6b26f0df63, udp: true}
+- {name: 🇺🇸 美国-波士顿 - 小火箭, server: 183.240.228.220, port: 55133, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇺🇸 美国-旧金山 - 小火箭, server: 183.240.228.220, port: 52217, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇺🇸 (专线)美国-洛杉矶 - 小火箭, server: 36.150.94.53, port: 16106, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇺🇸 （专线）美国 - 小火箭, server: 183.240.180.26, port: 55188, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇺🇸 美国-家庭IPB - 小火箭, server: 183.240.187.175, port: 56217, type: vmess, uuid: 69fdcb67-1878-4111-b7e2-0f4293cea04e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 美国🇺🇸 - Miao Planet, server: us.miaonode.com, port: 8787, type: ss, cipher: chacha20-ietf-poly1305, password: 5581db6d-2cce-4c4c-b611-14bd884728e4, udp: true}
+- *id001
+- *id002
+- *id003
+- *id011
+- *id012
+- *id013
+- *id014
+- {name: 🇺🇸 美国-01 - 美丽新世界, server: cname03-ncpbbyhazxjnwkrx.222schweinshaxe.com, port: 51031, type: ss, cipher: chacha20-ietf-poly1305, password: e79557c4-5f95-4e11-bd27-4cdf2edee01b, udp: true}
+- *id001
+- *id002
+- *id003
+- {name: 🇺🇸 美国-拉斯维加斯-001 - 漏网之鱼, server: 45.147.201.231, port: 20013, type: vmess, uuid: d322b3c9-bc09-40ea-add3-aabc6f7a2706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- {name: 🇺🇸 美国-拉斯维加斯-002 - 漏网之鱼, server: 45.147.201.231, port: 23071, type: vmess, uuid: d322b3c9-bc09-40ea-add3-aabc6f7a2706, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- {name: 🇺🇸 美国1_Twitter - 松果, server: xxx.btmbxxx.top, port: 12511, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国2_Face - 松果, server: xxx.btmbxxx.top, port: 12512, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国3 - 松果, server: xxx.btmbxxx.top, port: 12513, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国4 - 松果, server: xxx.btmbxxx.top, port: 12514, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国5 - 松果, server: xxx.btmbxxx.top, port: 12515, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国6_阿什本 - 松果, server: xxx.btmbxxx.top, port: 12516, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国7_凤凰城 - 松果, server: xxx.btmbxxx.top, port: 12517, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国8_圣何塞 - 松果, server: xxx.btmbxxx.top, port: 12518, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国9_洛杉矶_GPT_NF - 松果, server: xxx.btmbxxx.top, port: 12519, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国10_芝加哥 - 松果, server: xxx.btmbxxx.top, port: 12520, type: vmess, uuid: d73e4344-47e0-411b-bf3a-4d70f13f4894, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: '🇺🇸 [vmess][直链] 美国 grcp - 禧游记', server: 666100k.666811.xyz, port: 8443, type: vmess, uuid: 14f4d47a-9fe8-4dbf-a33f-0665c8064e3e, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: 666100k.666811.xyz, network: grpc, grpc-opts: {grpc-service-name: 666100k.666811.xyz}, udp: true}
+- {name: 🇺🇸us-ss - 北大青鸟, server: us.qwerqaq.xyz, port: 10003, type: ss, cipher: chacha20-ietf-poly1305, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, udp: true}
+- {name: 🇺🇸us-vr - 北大青鸟, server: us1.qwerqaq.xyz, port: 10007, type: vmess, uuid: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: us1.qwerqaq.xyz, network: ws, ws-opts: {path: /xiaoyu233, headers: {Host: python.org}}, udp: true}
+- {name: 🇺🇸us-tr - 北大青鸟, server: us2.qwerqaq.xyz, port: 10011, type: trojan, password: 36757a6d-f8dd-4dbc-bedd-68236d2d0bb8, sni: us2.qwerqaq.xyz, skip-cert-verify: true, udp: true}
