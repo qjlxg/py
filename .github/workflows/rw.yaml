@@ -27,22 +27,22 @@ jobs:
         env:
           TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}  # 目标仓库的访问token
         run: |
-          git clone https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/sub.git
-          cd sub
+          git clone https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git
+          cd aggregator
           git pull origin main
 
       - name: Sync file
         run: |
           # 创建目标目录（如果不存在）
-          mkdir -p sub/data
+          mkdir -p aggregator/data
           # 强制复制文件
-          cp -f data/clash.yaml sub/data/clash.yaml
+          cp -f data/clash.yaml aggregator/data/clash.yaml
 
       - name: Commit and push changes
         env:
           TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
         run: |
-          cd sub
+          cd aggregator
           git add data/clash.yaml
-          git commit -m "Sync clash.yaml from source repo (Commit: ${{ github.sha }})"
-          git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/sub.git main
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') (Commit: ${{ github.sha }})"
+          git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git main
