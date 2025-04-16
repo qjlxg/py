@@ -31,7 +31,7 @@ jobs:
      run: |
        git config --global user.email "actions@github.com"
        git config --global user.name "GitHub Actions"
-       git add data/base64.txt
+       git add base64.txt
        if [[ -n $(git status -s base64.txt) ]]; then  # Check for changes
          git commit -m "Update base64.txt"
          git push
