@@ -44,5 +44,5 @@ jobs:
         run: |
           cd aggregator
           git add data/clash.yaml
-          git commit -m "$(date '+%Y-%m-%d %H:%M:%S') (Commit: ${{ github.sha }})"
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
           git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git main
