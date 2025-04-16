@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇸🇬 （专线）新加坡 - 小火箭, server: 120.232.217.221, port: 54311, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇸🇬 IEPL · 新加坡SG · 204 - 悟空加速器, server: 183.240.116.150, port: 16114, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}

@@ -1,0 +1,14 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇯🇵 （专线）日本-名古屋 - 小火箭, server: 120.232.217.221, port: 53129, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇯🇵 （专线）日本-大阪 - 小火箭, server: 183.240.180.26, port: 53229, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇯🇵 （专线）日本-秋田 - 小火箭, server: 120.232.217.221, port: 56432, type: vmess, uuid: 582b1fe5-50cf-49a6-8f53-5af719b640fd, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 140 - 悟空加速器, server: 183.240.116.150, port: 16101, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 105 - 悟空加速器, server: 183.240.116.150, port: 16102, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 176 - 悟空加速器, server: 183.240.116.150, port: 16103, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 222 - 悟空加速器, server: 183.240.116.150, port: 16104, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 129 - 悟空加速器, server: 183.240.116.150, port: 16105, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 89 - 悟空加速器, server: 183.240.116.150, port: 16106, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 209 - 悟空加速器, server: 183.240.116.150, port: 16107, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
+- {name: 🇯🇵 IEPL · 日本JP · 48 - 悟空加速器, server: 183.240.116.150, port: 16108, type: ss, cipher: chacha20-ietf-poly1305, password: 23ce5240-0a48-4e5c-880a-b899bea68cac, udp: true}
