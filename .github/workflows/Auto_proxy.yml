@@ -44,7 +44,7 @@ jobs:
         git config --global user.email "actions@github.com"
         git pull origin main
         git add ./sub/*
-        git add ./Long_term_subscription_num    
+        git add ./data/Long_term_subscription_num    
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S') "
         
     - name: 推送更改
