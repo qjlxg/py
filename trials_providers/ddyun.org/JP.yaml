@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: '🇯🇵 [vmess]日本-1.3x - 多多云机场', server: jp1.895896.xyz, port: 80, type: vmess, uuid: 0946164d-7605-40e1-8fb8-75eb7ed1b6c7, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jp1.895896.xyz}}, udp: true}
