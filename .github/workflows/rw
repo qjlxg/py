@@ -1,0 +1,57 @@
+
+# 在源仓库的 .github/workflows/sync-file.yml 中创建此工作流
+
+name: Sync File to Another Repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths: 
+      - 'data/clash.yaml'  # 仅当此文件变化时触发
+
+jobs:
+  sync-file:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # 获取完整提交历史
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Clone target repo
+        env:
+          TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}  # 目标仓库的访问token
+        run: |
+          git clone https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git
+          cd aggregator
+          git pull origin main
+
+      - name: Sync file
+        run: |
+          # 创建目标目录（如果不存在）
+          mkdir -p aggregator/data
+          # 强制复制文件
+          cp -f data/clash.yaml aggregator/data/clash.yaml
+          cp -f data/clash.yaml aggregator/data/all_clash.txt
+          cp -f data/clash.yaml aggregator/data/api.txt
+          cp -f data/clash.yaml aggregator/data/transporter.txt
+          cp -f ./Long_term_subscription_num   aggregator/data/v2ray.txt
+
+      - name: Commit and push changes
+        env:
+          TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
+        run: |
+          cd aggregator
+          git add data/clash.yaml
+          git add data/all_clash.txt
+          git add data/api.txt
+          git add data/transporter.txt
+          git add data/v2ray.txt
+          git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
+          git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git main
