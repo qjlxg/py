@@ -33,7 +33,7 @@ jobs:
 
     - name: Run Python script
       run: |
-        python subscribe/transporter.py
+        python subscribe/transporter.py >> data/transporter.txt
 
     - name: Commit and push changes to main
       run: |
