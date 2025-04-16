@@ -1,0 +1,189 @@
+%YAML 1.1
+---
+proxies:
+- &id001 {name: ℹ️ ✈️网站 mbox.idsduf.com - MBOXX, server: bestcf.top, port: 2082, type: vmess, uuid: 94bafdf6-f984-46be-8d9c-c8e243fa128a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: '/?ed=2048', headers: {Host: akuslaxb.43qin.top}}, udp: true}
+- &id002 {name: ℹ️ 更新不了订阅去官网重新订阅 - MBOXX, server: usline.7rdx.top, port: 2082, type: vmess, uuid: 94bafdf6-f984-46be-8d9c-c8e243fa128a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id003 {name: 🇭🇰 香港 01 ｜₁ₓ - MBOXX, server: ambxxic01hk.dorabbb.top, port: 45515, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id004 {name: 🇭🇰 香港 02 ｜₁ₓ - MBOXX, server: ambxxic01hk.dorabbb.top, port: 45556, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id005 {name: 🇭🇰 香港 04 ｜₁ₓ - MBOXX, server: ambxxic01hk.dorabbb.top, port: 45511, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id006 {name: 🇭🇰 香港 05 ｜₁ₓ - MBOXX, server: amb01hk.dorabbb.top, port: 45513, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id007 {name: 🇭🇰 香港 06 ｜₁ₓ - MBOXX, server: amb01hk.dorabbb.top, port: 45517, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id008 {name: 🇭🇰 香港 07 ｜₁ₓ - MBOXX, server: ambxxid02hk.dorabbb.top, port: 34500, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id009 {name: 🇭🇰 香港 08 ｜₁ₓ - MBOXX, server: ambxxid02hk.dorabbb.top, port: 34503, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id010 {name: 🇭🇰 香港 10 ｜₁ₓ - MBOXX, server: ambox03hk.dorabbb.top, port: 45512, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id011 {name: 🇭🇰 香港 11 ｜₁ₓ - MBOXX, server: ambox03hk.dorabbb.top, port: 45514, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id012 {name: 🇭🇰 香港 12 ｜₁ₓ - MBOXX, server: ambox03hk.dorabbb.top, port: 45518, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id013 {name: 🇹🇼 🇨🇳 台湾 01 ｜₁ₓ - MBOXX, server: aambx01tw.dorabbb.top, port: 45503, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id014 {name: 🇹🇼 🇨🇳 台湾 02 ｜₁ₓ - MBOXX, server: aambx01tw.dorabbb.top, port: 47789, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id015 {name: 🇹🇼 🇨🇳 台湾 03 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 47790, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id016 {name: 🇹🇼 🇨🇳 台湾 05 ｜₁ₓ - MBOXX, server: aambx02tw.dorabbb.top, port: 47711, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id017 {name: 🇹🇼 🇨🇳 台湾 06 ｜₁ₓ - MBOXX, server: aambx02tw.dorabbb.top, port: 47791, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id018 {name: 🇹🇼 🇨🇳 台湾 07 ｜₁ₓ - MBOXX, server: aambx02tw.dorabbb.top, port: 47793, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id019 {name: 🇸🇬  新加坡  01 ｜₁ₓ - MBOXX, server: aambx01sg.dorabbb.top, port: 45514, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id020 {name: 🇸🇬  新加坡  02 ｜₁ₓ - MBOXX, server: aambx01sg.dorabbb.top, port: 34533, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id021 {name: 🇸🇬  新加坡  03 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 34592, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id022 {name: 🇸🇬  新加坡  04 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34586, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id023 {name: 🇸🇬  新加坡  05 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34590, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id024 {name: 🇸🇬  新加坡  06 ｜₁ₓ - MBOXX, server: aambx02sg.dorabbb.top, port: 34595, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id025 {name: 🇯🇵 日本 01 ｜₁ₓ - MBOXX, server: aambx01jp.dorabbb.top, port: 46617, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id026 {name: 🇯🇵 日本 02 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 45505, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id027 {name: 🇯🇵 日本 03 ｜₁ₓ - MBOXX, server: aambx01jp.dorabbb.top, port: 45575, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id028 {name: 🇯🇵 日本 04 ｜₁ₓ - MBOXX, server: aambx01jp.dorabbb.top, port: 45506, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id029 {name: 🇯🇵 日本 05 ｜₁ₓ - MBOXX, server: aambx02jp.dorabbb.top, port: 46629, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id030 {name: 🇯🇵 日本 06 ｜₁ₓ - MBOXX, server: aambx02jp.dorabbb.top, port: 45001, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id031 {name: 🇯🇵 日本 07 ｜₁ₓ - MBOXX, server: aambx02jp.dorabbb.top, port: 45516, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id032 {name: 🇯🇵 日本 08 ｜₁ₓ - MBOXX, server: aambx02jp.dorabbb.top, port: 45578, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id033 {name: GPT专用 01｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 44701, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id034 {name: GPT专用 02｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 47728, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id035 {name: GPT专用 03｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 37731, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id036 {name: 🇺🇸  美国  01 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 45541, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id037 {name: 🇺🇸  美国  02 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 34521, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id038 {name: 🇺🇸  美国  03 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 47737, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id039 {name: 🇺🇸  美国  04 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 47733, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id040 {name: 🇺🇸  美国  05 ｜₁ₓ - MBOXX, server: aambx99.dorabbb.top, port: 47922, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id041 {name: 🇺🇸  美国  06 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 47927, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id042 {name: 🇨🇦  加拿大  01 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 48801, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id043 {name: 🇨🇦  加拿大  02 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 48871, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id044 {name: 🇬🇧  英国  01 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 48839, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id045 {name: 🇬🇧  英国  02 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 48814, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id046 {name: 🇫🇷 法国 01｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 46474, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id047 {name: 🇫🇷 法国 02｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 49107, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id048 {name: 🇰🇷  韩国  01 ｜₁ₓ - MBOXX, server: aambx01qt.dorabbb.top, port: 48813, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id049 {name: 🇰🇷  韩国  02 ｜₁ₓ - MBOXX, server: aambx02qw.dorabbb.top, port: 48825, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id050 {name: 🇱🇺  卢森堡 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45523, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id051 {name: 🇦🇺  澳大利亚 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48835, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id052 {name: 🇳🇿 新西兰 奥克兰 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48836, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id053 {name: 🇲🇾 马来西亚 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48879, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id054 {name: 🇮🇩 印尼 雅加达 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45779, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id055 {name: 🇵🇭 菲律宾 马尼拉 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45792, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id056 {name: 🇻🇳 越南 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45775, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id057 {name: 🇲🇲 缅甸 仰光 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45773, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id058 {name: 🇰🇭 柬埔寨 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45723, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id059 {name: 🇮🇳 印度｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45731, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id060 {name: 🇦🇪 阿联酋 富查伊拉｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45729, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id061 {name: 🇶🇦 卡塔尔 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45767, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id062 {name: 🇭🇺 匈牙利 布达佩斯 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49876, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id063 {name: 🇪🇸 西班牙 马德里 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48877, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id064 {name: 🇵🇹 葡萄牙 维亚纳堡 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49104, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id065 {name: 🇮🇹 意大利 米兰 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48730, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id066 {name: 🇩🇪 德国 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 46473, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id067 {name: 🇸🇪 瑞典 斯德哥尔摩 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48733, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id068 {name: 🇹🇷  土耳其 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48853, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id069 {name: 🇪🇬 埃及 开罗家宽 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48854, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id070 {name: 🇲🇽 墨西哥 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 46451, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id071 {name: 🇮🇱 以色列 耶路撒冷｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48927, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id072 {name: 🇷🇺 俄罗斯 莫斯科 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48875, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id073 {name: 🇵🇱 波兰 弗罗茨瓦夫｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48876, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id074 {name: 🇮🇸 冰岛 雷克亚维克｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48891, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id075 {name: 🇰🇿 哈萨克斯坦｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48893, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id076 {name: 🇬🇷 希腊 塞萨洛尼基｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48897, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id077 {name: 🇱🇻 拉脱维亚 里加｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48898, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id078 {name: 🇨🇭 瑞士 日内瓦｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49101, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id079 {name: 🇧🇪 比利时 布鲁塞尔｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49103, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id080 {name: 🇮🇪 爱尔兰 都柏林｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49108, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id081 {name: 🇧🇦 波黑 波斯尼亚｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 47136, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id082 {name: 🇫🇮 芬兰 赫尔辛基｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 47137, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id083 {name: 🇨🇴 哥伦比亚 波哥大｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49109, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id084 {name: 🇪🇪 爱沙尼亚 塔林｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49105, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id085 {name: 🇧🇾 白俄罗斯 明斯克｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49106, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id086 {name: 🇦🇿 阿塞拜疆 巴库｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49128, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id087 {name: 🇧🇷 巴西 圣保罗 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48925, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id088 {name: 🇳🇬 尼日利亚 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48926, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id089 {name: 🇷🇴 罗马尼亚 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48737, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id090 {name: 🇹🇬 西非多哥 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 45533, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id091 {name: 🇦🇴 安哥拉 罗安达 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48915, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id092 {name: 🇳🇵尼泊尔 加德满都 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 49886, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- &id093 {name: 🇲🇳 蒙古 乌兰巴托 ｜₁ₓ - MBOXX, server: ambnds00.dorabbb.top, port: 48887, type: ss, cipher: chacha20-ietf-poly1305, password: 94bafdf6-f984-46be-8d9c-c8e243fa128a, udp: true}
+- *id001
+- *id002
+- *id003
+- *id004
+- *id005
+- *id006
+- *id007
+- *id008
+- *id009
+- *id010
+- *id011
+- *id012
+- *id013
+- *id014
+- *id015
+- *id016
+- *id017
+- *id018
+- *id019
+- *id020
+- *id021
+- *id022
+- *id023
+- *id024
+- *id025
+- *id026
+- *id027
+- *id028
+- *id029
+- *id030
+- *id031
+- *id032
+- *id033
+- *id034
+- *id035
+- *id036
+- *id037
+- *id038
+- *id039
+- *id040
+- *id041
+- *id042
+- *id043
+- *id044
+- *id045
+- *id046
+- *id047
+- *id048
+- *id049
+- *id050
+- *id051
+- *id052
+- *id053
+- *id054
+- *id055
+- *id056
+- *id057
+- *id058
+- *id059
+- *id060
+- *id061
+- *id062
+- *id063
+- *id064
+- *id065
+- *id066
+- *id067
+- *id068
+- *id069
+- *id070
+- *id071
+- *id072
+- *id073
+- *id074
+- *id075
+- *id076
+- *id077
+- *id078
+- *id079
+- *id080
+- *id081
+- *id082
+- *id083
+- *id084
+- *id085
+- *id086
+- *id087
+- *id088
+- *id089
+- *id090
+- *id091
+- *id092
+- *id093
