@@ -367,7 +367,7 @@ def get_sub_url():
 if __name__ == '__main__':
     print("========== 开始获取机场订阅链接 ==========")
     get_sub_url()
-   print("========== 开始获取频道订阅链接 ==========")
+    print("========== 开始获取频道订阅链接 ==========")
     for url in urls:
         #print(url, "开始获取......")
         thread = threading.Thread(target=get_content,args = (url,))
