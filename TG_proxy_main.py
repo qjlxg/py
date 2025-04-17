@@ -1,5 +1,3 @@
-# w1770946466 北慕白  https://github.com/w1770946466/Auto_proxy
-# v2ray_collecto
 # coding=utf-8
 import base64
 import requests
@@ -12,24 +10,44 @@ import random, string
 import datetime
 from time import sleep
 import chardet
+from bs4 import BeautifulSoup
+from concurrent.futures import ThreadPoolExecutor
+
 
 #试用机场链接
-home_urls =(
-'https://upm8kfu.nicecloud.win:8443',
-'http://175.178.9.20',
-'http://47.74.1.114:8089',
-'http://nuxyun.v2rayflash.top',
-'http://sub.kjdjakskl.cyou',
-'http://xueyejiasu.com',
-'https://0run.vip',
+url_try = "https://raw.githubusercontent.com/PangTouY00/aggregator/refs/heads/main/data/valid-domains.txt"
+
+# 发送GET请求获取内容
+response = requests.get(url_try)
+
+# 检查请求是否成功
+if response.status_code == 200:
+    # 按行分割内容并存入列表
+    home_urls = response.text.splitlines()
+else:
+    home_urls = (
+    'https://ch.louwangzhiyu.xyz',   #100G  永久
+    'https://dashuai.us',            #2G  1天
+    'https://xiaofeiyun7.top',
+    'https://vt.louwangzhiyu.xyz',
+    'https://sulink.pro',
+    'https://lanmaoyun.icu',
+    'https://xueyejiasu.com',
+    'https://metacloud.eu.org',
+    'https://free.colacloud.free.hr',
+    'https://needss.link',
+    'https://qingyun.zybs.eu.org',
+    'https://vpn.127414.xyz',
+    'https://hy-2.com',
+    'https://666666222.xyz',
+    'https://xiaofeiyun3.cfd',
+    )
 
 
-
-)
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
-end_list_clash = []
+end_list_clash = ['https://paste.gg/p/jimbob/e33da6f7c8484ec6adb184f0f5fd058c/files/a7cd0b4e32304d9987fc15d386136e20/raw']
 #所有的v2ray订阅链接
 end_list_v2ray = []
 #所有的节点明文信息
@@ -37,26 +55,29 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['']
+e_sub = ['https://sub.789.st/sub?target=v2ray&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&sort=true&_=1710174203726','https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary','https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray','https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',"https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt"]
+#e_sub = ['https://pastebin.com/raw/dmnL3uAR','https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2','https://raw.githubusercontent.com/kxswa/k/k/base64']
 #频道
-urls =[]
-#线程池
-threads = []
+urls =["https://t.me/s/freeVPNjd","https://t.me/s/FProxies","https://t.me/s/wxdy666","https://t.me/s/fq521","https://t.me/s/go4sharing","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/ZDYZ2","https://t.me/s/wangcai_8","https://t.me/s/zyfxlnn","https://t.me/s/fqzw9","https://t.me/s/sdffnkl","https://t.me/s/ShareCentrePro","https://t.me/s/hkaa0"]
 #机场链接
-plane_sub = ['']
+plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
 #机场试用链接
 try_sub = []
 #获取频道订阅的个数
-sub_n = -25
+sub_n = -5
 #试用节点明文
 end_try = []
+#线程池
+threads = []
+# 设置超时时间(秒)
+TIMEOUT = 500
 
 #获取群组聊天中的HTTP链接
 def get_channel_http(url):
     headers = {
         'sec-ch-ua': '".Not/A)Brand";v="99", "Google Chrome";v="103", "Chromium";v="103"',
         'Accept': 'application/json, text/javascript, */*; q=0.01',
-        'Referer': 'https://t.me/s/oneclickvpnkeys',
+        'Referer': 'https://t.me/s/wbnet',
         'X-Requested-With': 'XMLHttpRequest',
         'sec-ch-ua-mobile': '?0',
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.0.0 Safari/537.36',
@@ -102,7 +123,7 @@ def get_content(url):
         new_list_down = new_list[sub_n::]
     except:
         new_list_down = new_list[len(new_list) * 2 // 3::]
-    #print("共获得", len(new_list_down), "条链接")
+    print("共获得", len(new_list_down), "条链接")
     #print('【判断链接是否为订阅链接】')
     for o in new_list_down:
         try:
@@ -212,34 +233,34 @@ def write_document():
         TimeDate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
         for index in range(len(lines)):
             try:
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_num`\n':
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {length}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription1`\n':
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
                     lines.pop(index+1)
                     lines.insert(index+1, f'`Total number of merge nodes: {length-step*7}`\n')
-                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
+                if lines[index] == '`https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
                     lines.pop(index+4)
                     lines.pop(index+4)
                     lines.insert(index+4, f'Updata：`{TimeDate}`\n')
@@ -284,7 +305,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = []
+    urls = ["https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription_try&insert=false&config=https://raw.githubusercontent.com/PangTouY00/fetchProxy/main/config/provider/rxconfig.ini&emoji=true","https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription2&insert=false&config=https://raw.githubusercontent.com/PangTouY00/fetchProxy/main/config/provider/rxconfig.ini&emoji=true", "https://api.dler.io//sub?target=clash&url=https://raw.githubusercontent.com/PangTouY00/Auto_proxy/main/Long_term_subscription3&insert=false&config=https://raw.githubusercontent.com/PangTouY00/fetchProxy/main/config/provider/rxconfig.ini&emoji=true"]
     n = 1
     for i in urls:
         response = requests.get(i)
@@ -342,7 +363,7 @@ def get_sub_url():
                         f'{current_url}/api/v1/user/order/checkout', data=fan_data_n, headers=fan_header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={fan_res.json()["data"]["token"]}'
                     try_sub.append(subscription_url)
-                    e_sub.append(subscription_url)
+                    #e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except Exception as result:
                     print(result)
@@ -353,31 +374,140 @@ def get_sub_url():
                         current_url+V2B_REG_REL_URL, data=form_data, headers=header)
                     subscription_url = f'{current_url}/api/v1/client/subscribe?token={response.json()["data"]["token"]}'
                     try_sub.append(subscription_url)
-                    e_sub.append(subscription_url)
+                    #e_sub.append(subscription_url)
                     print("add:"+subscription_url)
                 except Exception as e:
                     print("获取订阅失败",e)
             i += 1
-
+        
+# ========== 抓取 cfmem.com 的节点 ==========
+def get_cfmem():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"
+        }
+        res = requests.get("https://www.cfmem.com/search/label/free", headers=headers)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        
+        # 查找目标 h2 并提取 URL
+        target_h2 = soup.find('h2', class_='entry-title')
+        if target_h2:
+            article_url = target_h2.find('a')['href']
+            #print(article_url)
             
-  
+            res = requests.get(article_url, headers=headers)
+            soup = BeautifulSoup(res.text, 'html.parser')
+            
+            # 查找订阅地址
+            target_span = soup.find('span', style="background-color:#fff;color:#111;font-size:15px")
+            if target_span:
+                sub_url = re.search(r'https://fs\.v2rayse\.com/share/\d{8}/\w+\.txt', target_span.text).group()
+                print(sub_url)
+                try_sub.append(sub_url)
+                e_sub.append(sub_url)
+                print("获取cfmem.com完成！")
+            else:
+                print("未找到订阅地址")
+        else:
+            print("未找到目标 h2")
+    except Exception as e:
+        print(e)
+        print("获取cfmem.com失败！")
+
+# ========== 抓取 v2rayshare.com 的节点 ==========
+def get_v2rayshare():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get(
+            "https://v2rayshare.com/", headers=headers)
+        #print(res.text)
+        article_url = re.search(
+            r'https://v2rayshare.com/p/\d+\.html', res.text).group()
+        #print(article_url)
+        res = requests.get(article_url, headers=headers)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        # 查找目标 p 标签并提取 URL
+        target_p = soup.find('p', string=re.compile(r'https://v2rayshare.githubrowcontent.com/\d{4}/\d{2}/\d{8}\.txt'))
+        if target_p:
+            sub_url = target_p.text.strip()
+            print(sub_url)
+            try_sub.append(sub_url)
+            e_sub.append(sub_url)
+            print("获取v2rayshare.com完成！")
+        else:
+            print("未找到目标 p 标签")
+    except Exception as e:
+        print("获取v2rayshare.com失败！",e)
+
+# ========== 抓取 nodefree.org 的节点 ==========
+def get_nodefree():
+    try:
+        headers = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get(
+            "https://nodefree.org/", headers=headers)
+        article_url = re.search(
+            r'https://nodefree.org/p/\d+\.html', res.text).group()
+        res = requests.get(article_url, headers=headers)
+        soup = BeautifulSoup(res.text, 'html.parser')
+        # 查找目标 p 标签并提取 URL
+        target_p = soup.find('p', string=re.compile(r'https://nodefree.githubrowcontent.com/\d{4}/\d{2}/\d{8}\.txt'))
+        if target_p:
+            sub_url = target_p.text.strip()
+            print(sub_url)
+            try_sub.append(sub_url)
+            e_sub.append(sub_url)
+            print("获取nodefree.org完成！")
+        else:
+            print("未找到目标 p 标签")
+    except Exception as e:
+        print("获取nodefree.org失败！",e)
 
         
     
 if __name__ == '__main__':
+    # 初始化线程池（建议4-8个worker）
+    MAX_WORKERS = min(8, len(urls) + 4)  # 动态设置线程数[1][5]
+    
     print("========== 开始获取机场订阅链接 ==========")
     get_sub_url()
+    
+    print("========== 开始获取网站订阅链接 ==========")
+    # 使用线程池执行IO密集型任务[2][5]
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        executor.submit(get_cfmem)
+        executor.submit(get_v2rayshare)
+        executor.submit(get_nodefree)
+    
     print("========== 开始获取频道订阅链接 ==========")
+    threads = []
     for url in urls:
-        #print(url, "开始获取......")
-        thread = threading.Thread(target=get_content,args = (url,))
-        thread.start()
-        threads.append(thread)
-        #resp = get_content(get_channel_http(url))
-        #print(url, "获取完毕！！")
-    #等待线程结束
-    for t in tqdm(threads):
-        t.join()
+        print(url, "开始获取......")
+        # 添加超时参数（建议3-10秒）[3]
+        t = threading.Thread(
+            target=get_content,
+            args=(url,),
+            daemon=True  # 设置为守护线程[7]
+        )
+        t.start()
+        threads.append(t)
+    
+    # 优化线程等待机制[1][6]
+    alive_threads = threads.copy()
+    start_time = time.time()
+    with tqdm(total=len(threads)) as pbar:
+        while alive_threads and (time.time() - start_time < TIMEOUT):
+            for t in alive_threads[:]:
+                if not t.is_alive():
+                    alive_threads.remove(t)
+                    pbar.update(1)
+            time.sleep(0.1)  # 降低CPU占用
+    
+    # 处理超时线程[3]
+    for t in alive_threads:
+        print(f"线程超时终止: {t.name}")
+    
     print("========== 准备写入订阅 ==========")
     res = write_document()
     clash_sub = get_yaml()
