@@ -10,7 +10,6 @@ import random, string
 import datetime
 from time import sleep
 import chardet
-from bs4 import BeautifulSoup
 from concurrent.futures import ThreadPoolExecutor
 
 
@@ -380,89 +379,9 @@ def get_sub_url():
                     print("获取订阅失败",e)
             i += 1
         
-# ========== 抓取 cfmem.com 的节点 ==========
-def get_cfmem():
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"
-        }
-        res = requests.get("https://www.cfmem.com/search/label/free", headers=headers)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        
-        # 查找目标 h2 并提取 URL
-        target_h2 = soup.find('h2', class_='entry-title')
-        if target_h2:
-            article_url = target_h2.find('a')['href']
-            #print(article_url)
-            
-            res = requests.get(article_url, headers=headers)
-            soup = BeautifulSoup(res.text, 'html.parser')
-            
-            # 查找订阅地址
-            target_span = soup.find('span', style="background-color:#fff;color:#111;font-size:15px")
-            if target_span:
-                sub_url = re.search(r'https://fs\.v2rayse\.com/share/\d{8}/\w+\.txt', target_span.text).group()
-                print(sub_url)
-                try_sub.append(sub_url)
-                e_sub.append(sub_url)
-                print("获取cfmem.com完成！")
-            else:
-                print("未找到订阅地址")
-        else:
-            print("未找到目标 h2")
-    except Exception as e:
-        print(e)
-        print("获取cfmem.com失败！")
 
-# ========== 抓取 v2rayshare.com 的节点 ==========
-def get_v2rayshare():
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
-        res = requests.get(
-            "https://v2rayshare.com/", headers=headers)
-        #print(res.text)
-        article_url = re.search(
-            r'https://v2rayshare.com/p/\d+\.html', res.text).group()
-        #print(article_url)
-        res = requests.get(article_url, headers=headers)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        # 查找目标 p 标签并提取 URL
-        target_p = soup.find('p', string=re.compile(r'https://v2rayshare.githubrowcontent.com/\d{4}/\d{2}/\d{8}\.txt'))
-        if target_p:
-            sub_url = target_p.text.strip()
-            print(sub_url)
-            try_sub.append(sub_url)
-            e_sub.append(sub_url)
-            print("获取v2rayshare.com完成！")
-        else:
-            print("未找到目标 p 标签")
-    except Exception as e:
-        print("获取v2rayshare.com失败！",e)
 
-# ========== 抓取 nodefree.org 的节点 ==========
-def get_nodefree():
-    try:
-        headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
-        res = requests.get(
-            "https://nodefree.org/", headers=headers)
-        article_url = re.search(
-            r'https://nodefree.org/p/\d+\.html', res.text).group()
-        res = requests.get(article_url, headers=headers)
-        soup = BeautifulSoup(res.text, 'html.parser')
-        # 查找目标 p 标签并提取 URL
-        target_p = soup.find('p', string=re.compile(r'https://nodefree.githubrowcontent.com/\d{4}/\d{2}/\d{8}\.txt'))
-        if target_p:
-            sub_url = target_p.text.strip()
-            print(sub_url)
-            try_sub.append(sub_url)
-            e_sub.append(sub_url)
-            print("获取nodefree.org完成！")
-        else:
-            print("未找到目标 p 标签")
-    except Exception as e:
-        print("获取nodefree.org失败！",e)
+
 
         
     
@@ -473,13 +392,7 @@ if __name__ == '__main__':
     print("========== 开始获取机场订阅链接 ==========")
     get_sub_url()
     
-    print("========== 开始获取网站订阅链接 ==========")
-    # 使用线程池执行IO密集型任务[2][5]
-    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
-        executor.submit(get_cfmem)
-        executor.submit(get_v2rayshare)
-        executor.submit(get_nodefree)
-    
+  
     print("========== 开始获取频道订阅链接 ==========")
     threads = []
     for url in urls:
