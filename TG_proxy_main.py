@@ -13,8 +13,20 @@ import datetime
 from time import sleep
 import chardet
 
+
 #试用机场链接
-url_try = "https://igdux.top/i5Hd)"
+url_try = "https://igdux.top/i5Hdt"
+
+# 发送GET请求获取内容
+response = requests.get(url_try)
+
+# 检查请求是否成功
+if response.status_code == 200:
+    # 按行分割内容并存入列表
+    home_urls = response.text.splitlines()
+else:
+    home_urls = (    
+    )
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
