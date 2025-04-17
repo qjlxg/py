@@ -1,0 +1,53 @@
+%YAML 1.1
+---
+proxies:
+- {name: 邀请好友最高返利50% - 蜥蜴网络, server: 183.236.51.160, port: 27822, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港01 - 蜥蜴网络, server: rdgfe.vxzjv.xyz, port: 45465, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港02 - 蜥蜴网络, server: sfneran.vxzjv.xyz, port: 24057, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港03 - 蜥蜴网络, server: nnertn.vxzjv.xyz, port: 40988, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港04 - 蜥蜴网络, server: rgwre.vxzjv.xyz, port: 18240, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港05 - 蜥蜴网络, server: 183.236.51.167, port: 52199, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港06 - 蜥蜴网络, server: 183.236.51.166, port: 52314, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇭🇰 大陆-香港07 - 蜥蜴网络, server: 117.173.88.171, port: 31249, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇯🇵 大陆-日本05 - 蜥蜴网络, server: 36.151.251.37, port: 54954, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇯🇵 大陆-日本06 - 蜥蜴网络, server: 183.236.51.167, port: 37062, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇯🇵 大陆-日本07 - 蜥蜴网络, server: 117.173.88.171, port: 29299, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇸🇬 大陆-新加坡05 - 蜥蜴网络, server: 183.236.51.166, port: 14165, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇸🇬 大陆-新加坡06 - 蜥蜴网络, server: 183.236.51.167, port: 31289, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇸🇬 大陆-新加坡07 - 蜥蜴网络, server: 117.173.88.171, port: 18340, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 大陆-台湾05 - 蜥蜴网络, server: 183.236.51.166, port: 59598, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 大陆-台湾06 - 蜥蜴网络, server: 183.236.51.167, port: 46301, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 大陆-台湾07 - 蜥蜴网络, server: 117.173.88.171, port: 21191, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 大陆-美国05 - 蜥蜴网络, server: 183.236.51.167, port: 35774, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 大陆-美国06 - 蜥蜴网络, server: 117.173.88.171, port: 17108, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 大陆-美国07 - 蜥蜴网络, server: 36.151.251.37, port: 28766, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇬🇧 大陆-英国05 - 蜥蜴网络, server: 117.173.88.171, port: 13460, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇬🇧 大陆-英国06 - 蜥蜴网络, server: 36.151.251.37, port: 51832, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇬🇧 大陆-英国07 - 蜥蜴网络, server: 183.236.51.167, port: 40998, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇩🇪 大陆-德国05 - 蜥蜴网络, server: 103.36.220.195, port: 32216, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇩🇪 大陆-德国06 - 蜥蜴网络, server: 36.151.251.37, port: 45051, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇩🇪 大陆-德国07 - 蜥蜴网络, server: 183.236.51.167, port: 34580, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: hksm2 - 蜥蜴网络, server: 141.11.217.230, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇯🇵 海外JP-1 - 蜥蜴网络, server: 82.153.65.147, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇸🇬 SG-1 - 蜥蜴网络, server: 5.253.36.66, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 US-1 - 蜥蜴网络, server: 156.229.161.18, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 海外TW-1 - 蜥蜴网络, server: 83.147.14.233, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇩🇪 DE-2 - 蜥蜴网络, server: 156.226.174.127, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇬🇧 海外UK-1 - 蜥蜴网络, server: 89.213.40.89, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: ℹ️ 续费官网：http://47.122.55.225:50001 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27832, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 售后企鹅群909426351 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27832, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27832, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27832, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27832, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27833, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27833, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27833, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27834, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27834, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27834, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 新家坡|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27835, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 新家坡|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27835, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 新家坡|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27835, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

@@ -1,0 +1,10 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇹🇼 大陆-台湾05 - 蜥蜴网络, server: 183.236.51.166, port: 59598, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 大陆-台湾06 - 蜥蜴网络, server: 183.236.51.167, port: 46301, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 大陆-台湾07 - 蜥蜴网络, server: 117.173.88.171, port: 21191, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 海外TW-1 - 蜥蜴网络, server: 83.147.14.233, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇹🇼 台湾|隧道1 - 阳光加速器, server: zf.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾|隧道2 - 阳光加速器, server: zf1.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾|隧道3 - 阳光加速器, server: zf2.xinzhanduijie.top, port: 27831, type: vmess, uuid: f8268f43-be72-4fe1-a525-5e848171787c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}

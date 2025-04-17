@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇺🇸 大陆-美国05 - 蜥蜴网络, server: 183.236.51.167, port: 35774, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 大陆-美国06 - 蜥蜴网络, server: 117.173.88.171, port: 17108, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 大陆-美国07 - 蜥蜴网络, server: 36.151.251.37, port: 28766, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
+- {name: 🇺🇸 US-1 - 蜥蜴网络, server: 156.229.161.18, port: 56001, tfo: true, type: ss, cipher: aes-256-gcm, password: 5bf2ef20-7886-48f8-a9bd-9d24eaa2e1fa, udp: true}
