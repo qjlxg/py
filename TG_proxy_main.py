@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 #试用机场链接
-url_try = "https://igdux.top/nQem"
+url_try = "https://igdux.top/i5Hd"
 
 # 发送GET请求获取内容
 response = requests.get(url_try)
