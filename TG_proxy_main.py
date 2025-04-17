@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 #试用机场链接
-url_try = "https://raw.githubusercontent.com/qjlxg/py/refs/heads/main/data/d1?token=GHSAT0AAAAAADBYZWPGMYM3RAHVHGIXD7B62AAZQ3A"
+url_try = "https://igdux.top/nQem"
 
 # 发送GET请求获取内容
 response = requests.get(url_try)
