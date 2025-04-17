@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 #试用机场链接
-url_try = "https://igdux.top/nQem"
+url_try = ""
 
 # 发送GET请求获取内容
 response = requests.get(url_try)
@@ -32,11 +32,11 @@ else:
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
-end_list_clash = []
+end_list_clash = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml']
 #所有的v2ray订阅链接
-end_list_v2ray = []
+end_list_v2ray = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/api.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/transporter.txt']
 #所有的节点明文信息
-end_bas64 = []
+end_bas64 = [https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/v2ray.txt]
 #获得格式化后的链接
 new_list = []
 #永久订阅
