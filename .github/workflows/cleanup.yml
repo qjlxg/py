@@ -9,10 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Delete old workflow runs
-        uses: c-hive/delete-workflow-runs@v1
+        uses: actions/delete-workflow-runs@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          keep_days: 0 # 保留0天即删除全部
+          keep_days: 1 # 保留0天即删除全部
           # 可选过滤条件
           # repo: user/repo
           # workflow_file_name: workflow.yml
+
