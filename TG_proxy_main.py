@@ -14,7 +14,7 @@ from time import sleep
 import chardet
 
 #试用机场链接
-home_urls =()
+url_try = "https://igdux.top/i5Hd)"
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
