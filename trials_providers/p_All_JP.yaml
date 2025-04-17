@@ -1,0 +1,8 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇯🇵 日本-BGP-01 - 野草, server: mr6.xn--vl1a701a.xyz, port: 30003, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, sni: mr6.xn--vl1a701a.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-BGP - 野草, server: jp.xn--vl1a701a.xyz, port: 30001, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本-BGP02 - 野草, server: ap5.xn--vl1a701a.xyz, port: 30000, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, sni: ap5.xn--vl1a701a.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

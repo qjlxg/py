@@ -1,0 +1,15 @@
+%YAML 1.1
+---
+proxies:
+- &id002 {name: 🇭🇰 HK|香港1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id003 {name: 🇭🇰 HK|香港3|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20111, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id004 {name: 🇭🇰 HK|香港2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id001 {name: 🇭🇰 中国-香港-001 - 漏网之鱼, server: 212.192.12.154, port: 23015, type: vmess, uuid: c333b64f-0c11-43e7-afd1-0cae9e5e3d2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- *id001
+- {name: 🇭🇰 香港-BGP - 野草, server: hk.xn--vl1a701a.xyz, port: 30007, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, sni: hk.xn--vl1a701a.xyz, skip-cert-verify: true, udp: true}
+- *id001
+- *id002
+- *id003
+- *id004
+- {name: 🇭🇰 香港1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

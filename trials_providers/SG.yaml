@@ -1,0 +1,9 @@
+%YAML 1.1
+---
+proxies:
+- &id001 {name: 🇸🇬 SG|新加坡1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id002 {name: 🇸🇬 SG|新加坡2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- *id001
+- *id002
+- {name: 🇸🇬 新加坡1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17703, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

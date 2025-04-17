@@ -1,0 +1,14 @@
+%YAML 1.1
+---
+proxies:
+- &id003 {name: 🇺🇸 US|美国1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20100, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id001 {name: 🇺🇸 美国-拉斯维加斯-001 - 漏网之鱼, server: 45.147.201.231, port: 20013, type: vmess, uuid: c333b64f-0c11-43e7-afd1-0cae9e5e3d2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- &id002 {name: 🇺🇸 美国-拉斯维加斯-002 - 漏网之鱼, server: 45.147.201.231, port: 23071, type: vmess, uuid: c333b64f-0c11-43e7-afd1-0cae9e5e3d2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- *id001
+- *id002
+- {name: 🇺🇸 美国-CN2 - 野草, server: us.xn--vl1a701a.xyz, port: 32000, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, sni: us.xn--vl1a701a.xyz, skip-cert-verify: true, udp: true}
+- *id001
+- *id002
+- *id003
+- {name: 🇺🇸 美国1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17704, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 美国2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17704, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}

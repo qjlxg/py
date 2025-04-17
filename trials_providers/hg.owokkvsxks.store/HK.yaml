@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇭🇰 中国-香港-001 - 漏网之鱼, server: 212.192.12.154, port: 23015, type: vmess, uuid: 16f9bd3d-5faf-43b5-b870-7b55c5605af6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}

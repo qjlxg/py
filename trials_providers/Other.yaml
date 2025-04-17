@@ -1,0 +1,15 @@
+%YAML 1.1
+---
+proxies:
+- &id003 {name: 🇦🇫 AF|非洲1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20019, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id004 {name: 🇦🇫 AF|非洲2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20021, type: ss, cipher: chacha20-ietf-poly1305, password: 9044ff24-fc45-4edd-920e-afad7bdae5f1, udp: true}
+- &id001 {name: 🇷🇺 俄罗斯-圣彼得堡-001 - 漏网之鱼, server: 195.58.49.84, port: 22015, type: vmess, uuid: c333b64f-0c11-43e7-afd1-0cae9e5e3d2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- &id002 {name: 🇩🇪 德国-法兰克福-001 - 漏网之鱼, server: 91.149.233.178, port: 20053, type: vmess, uuid: c333b64f-0c11-43e7-afd1-0cae9e5e3d2a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- *id001
+- *id002
+- *id001
+- *id002
+- *id003
+- *id004
+- {name: ℹ️ 官网续费:xh2024.top - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: ℹ️ 备用:xh2025.top - 兴鸿云, server: zz.xinghongzf.xyz, port: 17701, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
