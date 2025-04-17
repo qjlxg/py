@@ -27,30 +27,31 @@ jobs:
         env:
           TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}  # 目标仓库的访问token
         run: |
-          git clone https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git
-          cd aggregator
+          git clone https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/add.git
+          cd add
           git pull origin main
 
       - name: Sync file
         run: |
           # 创建目标目录（如果不存在）
-          mkdir -p aggregator/data
+          mkdir -p add/data
           # 强制复制文件
-          cp -f data/clash.yaml aggregator/data/clash.yaml
-          cp -f data/clash.yaml aggregator/data/all_clash.txt
-          cp -f data/clash.yaml aggregator/data/api.txt
-          cp -f data/clash.yaml aggregator/data/transporter.txt
-          cp -f ./Long_term_subscription_num   aggregator/data/v2ray.txt
+          cp -f data/clash.yaml add/data/clash.yaml
+          cp -f data/clash.yaml add/data/all_clash.txt
+          cp -f data/clash.yaml add/data/api.txt
+          cp -f data/clash.yaml add/data/transporter.txt
+          cp -f ./trial.yaml add/data/trial.yaml
+          cp -f ./Long_term_subscription_num   add/data/v2ray.txt
           
       - name: Commit and push changes
         env:
           TARGET_TOKEN: ${{ secrets.TARGET_REPO_TOKEN }}
         run: |
-          cd aggregator
+          cd add
           git add data/clash.yaml
           git add data/all_clash.txt
           git add data/api.txt
           git add data/transporter.txt
           git add data/v2ray.txt
           git commit -m "$(date '+%Y-%m-%d %H:%M:%S')"
-          git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/aggregator.git main
+          git push https://x-access-token:${TARGET_TOKEN}@github.com/qjlxg/add.git main
