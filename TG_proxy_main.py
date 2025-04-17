@@ -36,7 +36,7 @@ end_list_clash = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads
 #所有的v2ray订阅链接
 end_list_v2ray = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/api.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/transporter.txt']
 #所有的节点明文信息
-end_bas64 = [https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/v2ray.txt]
+end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
