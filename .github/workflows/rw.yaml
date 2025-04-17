@@ -41,6 +41,7 @@ jobs:
           cp -f data/clash.yaml add/data/api.txt
           cp -f data/clash.yaml add/data/transporter.txt
           cp -f ./trial.yaml add/data/trial.yaml
+          cp -f ./Long_term_subscription1.yaml add/data/Long_term_subscription1.yaml
           cp -f ./Long_term_subscription_num   add/data/v2ray.txt
           
       - name: Commit and push changes
