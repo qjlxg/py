@@ -48,7 +48,7 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['']
+e_sub = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/api.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/transporter.txt']
 #频道
 urls =[]
 #线程池
@@ -295,7 +295,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = ["https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml"]
+    urls = ["https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml",]
     n = 1
     for i in urls:
         response = requests.get(i)
