@@ -295,7 +295,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = []
+    urls = ["https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml"]
     n = 1
     for i in urls:
         response = requests.get(i)
