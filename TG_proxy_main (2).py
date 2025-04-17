@@ -215,7 +215,59 @@ def write_document():
         plaintext_result_try = obj_try.decode()
         file_L_try = open("Long_term_subscription_try", 'w', encoding='utf-8')
         file_L_try.write(plaintext_result_try)
-       
+        #写入README
+        with open("README.md", 'r', encoding='utf-8') as f:
+            lines = f.readlines()
+            f.close()
+        now_time = datetime.datetime.now()
+        TimeDate = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+        for index in range(len(lines)):
+            try:
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription_num`\n':
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {length}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription1`\n':
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription2`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription3`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription4`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription5`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription6`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription7`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {step}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription8`\n': # 目标行内容
+                    lines.pop(index+1)
+                    lines.insert(index+1, f'`Total number of merge nodes: {length-step*7}`\n')
+                if lines[index] == '`https://raw.bgithub.xyz/w1770946466/Auto_proxy/main/Long_term_subscription3.yaml`\n': # 目标行内容
+                    lines.pop(index+4)
+                    lines.pop(index+4)
+                    lines.insert(index+4, f'Updata：`{TimeDate}`\n')
+                    lines.insert(index+4, f'### Try the number of high-speed subscriptions: `{len(try_sub)}`\n')
+                if lines[index] == '>Trial subscription：\n': # 目标行内容
+                    lines.pop(index)
+                    lines.pop(index)
+                """
+                if lines[index] == '## ✨Star count\n': # 目标行内容
+                    n = 5
+                    for TrySub in try_sub:
+                        lines.insert(index-n, f'\n>Trial subscription：\n`{TrySub}`\n')
+                        n += 3
+                """
+            except:
+                #print("写入READ出错")
+                pass
         #写入试用订阅
         for index in range(len(lines)):
             try:
@@ -243,7 +295,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml']
+    urls = []
     n = 1
     for i in urls:
         response = requests.get(i)
@@ -320,13 +372,39 @@ def get_sub_url():
 
             
   
-
+def get_kkzui():
+    # ========== 抓取 kkzui.com 的节点 ==========
+    try:
+        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get("https://kkzui.com/jd?orderby=modified",headers=headers)
+        article_url = re.search(r'<h2 class="item-heading"><a href="(https://kkzui.com/(.*?)\.html)"',res.text).groups()[0]
+        #print(article_url)
+        res = requests.get(article_url,headers=headers)
+        sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
+        print(sub_url)
+        e_sub.append(sub_url)
+        print("获取kkzui.com完成！")
+    except:
+        print("获取kkzui.com失败！")
+    try:
+        headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
+        res = requests.get("https://www.cfmem.com/search/label/free",headers=headers)
+        article_url = re.search(r"https?://www\.cfmem\.com/\d{4}/\d{2}/\S+v2rayclash-vpn.html",res.text).group()
+        #print(article_url)
+        res = requests.get(article_url,headers=headers)
+        sub_url = re.search(r'>v2ray订阅链接&#65306;(.*?)</span>',res.text).groups()[0]
+        print(sub_url)
+        try_sub.append(sub_url)
+        e_sub.append(sub_url)
+    except Exception as e:
+        print(e)
         
     
 if __name__ == '__main__':
     print("========== 开始获取机场订阅链接 ==========")
     get_sub_url()
-   
+    print("========== 开始获取kkzui.com订阅链接 ==========")
+    get_kkzui()
     print("========== 开始获取频道订阅链接 ==========")
     for url in urls:
         #print(url, "开始获取......")
