@@ -14,7 +14,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 
 #试用机场链接
-url_try = "https://raw.githubusercontent.com/PangTouY00/aggregator/refs/heads/main/data/valid-domains.txt"
+url_try = "https://raw.githubusercontent.com/qjlxg/py/refs/heads/main/data/d1?token=GHSAT0AAAAAADBYZWPGMYM3RAHVHGIXD7B62AAZQ3A"
 
 # 发送GET请求获取内容
 response = requests.get(url_try)
@@ -25,28 +25,14 @@ if response.status_code == 200:
     home_urls = response.text.splitlines()
 else:
     home_urls = (
-    'https://ch.louwangzhiyu.xyz',   #100G  永久
-    'https://dashuai.us',            #2G  1天
-    'https://xiaofeiyun7.top',
-    'https://vt.louwangzhiyu.xyz',
-    'https://sulink.pro',
-    'https://lanmaoyun.icu',
-    'https://xueyejiasu.com',
-    'https://metacloud.eu.org',
-    'https://free.colacloud.free.hr',
-    'https://needss.link',
-    'https://qingyun.zybs.eu.org',
-    'https://vpn.127414.xyz',
-    'https://hy-2.com',
-    'https://666666222.xyz',
-    'https://xiaofeiyun3.cfd',
+   
     )
 
 
 #文件路径
 update_path = "./sub/"
 #所有的clash订阅链接
-end_list_clash = ['https://paste.gg/p/jimbob/e33da6f7c8484ec6adb184f0f5fd058c/files/a7cd0b4e32304d9987fc15d386136e20/raw']
+end_list_clash = []
 #所有的v2ray订阅链接
 end_list_v2ray = []
 #所有的节点明文信息
@@ -54,12 +40,12 @@ end_bas64 = []
 #获得格式化后的链接
 new_list = []
 #永久订阅
-e_sub = ['https://sub.789.st/sub?target=v2ray&url=https://raw.githubusercontent.com/go4sharing/sub/main/sub.yaml&sort=true&_=1710174203726','https://raw.githubusercontent.com/yaney01/Yaney01/main/temporary','https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray','https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2',"https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt"]
-#e_sub = ['https://pastebin.com/raw/dmnL3uAR','https://openit.uitsrt.top/long','https://raw.githubusercontent.com/freefq/free/master/v2','https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub','https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2','https://raw.githubusercontent.com/kxswa/k/k/base64']
+e_sub = []
+#e_sub = []
 #频道
-urls =["https://t.me/s/freeVPNjd","https://t.me/s/FProxies","https://t.me/s/wxdy666","https://t.me/s/fq521","https://t.me/s/go4sharing","https://t.me/s/helloworld_1024","https://t.me/s/dingyue_Center","https://t.me/s/ZDYZ2","https://t.me/s/wangcai_8","https://t.me/s/zyfxlnn","https://t.me/s/fqzw9","https://t.me/s/sdffnkl","https://t.me/s/ShareCentrePro","https://t.me/s/hkaa0"]
+urls =[]
 #机场链接
-plane_sub = ['https://www.prop.cf/?name=paimon&client=base64']
+plane_sub = ['']
 #机场试用链接
 try_sub = []
 #获取频道订阅的个数
