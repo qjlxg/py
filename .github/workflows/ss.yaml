@@ -10,7 +10,7 @@ on:
     paths:
       - 'ss.py'
   schedule:
-    - cron: "0 */24 * * *"
+    - cron: "0 */36 * * *"
 env:
   GIST_PAT: ${{ secrets.GIST_PAT }}
   GIST_LINK: ${{ secrets.GIST_LINK }}
