@@ -22,7 +22,7 @@ def is_valid_url(url):
         return False
 
 # 获取原始URL列表
-sub_all_clash_url = 'https://raw.githubusercontent.com/qjlxg/py/refs/heads/main/tools/t?token=GHSAT0AAAAAADBYZWPGETXGQ6JXKZFPQOIOZ77O6SQ'
+sub_all_clash_url = 'https://raw.githubusercontent.com/qjlxg/skywrt/refs/heads/main/sources.list?token=GHSAT0AAAAAADBYZWPHJI23B54MUOKW77AK2AAOQTQ'
 try:
     response = requests.get(sub_all_clash_url, headers=headers, timeout=256)
     response.raise_for_status()
