@@ -186,15 +186,7 @@ def write_document():
         file.write(bas64)
         file.close()       
         
-        #减少获取的个数
-        r = 1
-        length = len(end_bas64_A)  # 总长
-        m = 8  # 切分成多少份
-        step = int(length / m) + 1  # 每份的长度
-        for i in range(0, length, step):
-            print("起",i,"始",i+step)
-            zhengli = '\n'.join(end_bas64_A[i: i + step]).replace('\n\n', "\n").replace('\n\n', "\n").replace('\n\n', "\n")
-            #将获得的节点变成base64加密，为了长期订阅
+         #将获得的节点变成base64加密，为了长期订阅
             obj = base64.b64encode(zhengli.encode())
             plaintext_result = obj.decode()
             #写入长期订阅
@@ -206,11 +198,7 @@ def write_document():
         plaintext_result = obj.decode()
         file_L = open("Long_term_subscription_num", 'w', encoding='utf-8')
         file_L.write(plaintext_result)
-        #写入试用订阅
-        obj_try = base64.b64encode(bas64_try.encode())
-        plaintext_result_try = obj_try.decode()
-        file_L_try = open("Long_term_subscription_try", 'w', encoding='utf-8')
-        file_L_try.write(plaintext_result_try)
+        
        
         #写入试用订阅
         for index in range(len(lines)):
