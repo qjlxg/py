@@ -170,16 +170,16 @@ proxy-groups:
   type: select
   proxies: *id008
 proxies:
-- {name: 🇭🇰 HK|香港1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇭🇰 HK|香港3|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20111, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇯🇵 JP|日本1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20112, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇭🇰 HK|香港2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇹🇼 TW|台湾1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20025, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇸🇬 SG|新加坡1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇸🇬 SG|新加坡2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇺🇸 US|美国1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20100, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇦🇫 AF|非洲1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20019, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇦🇫 AF|非洲2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20021, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
+- {name: 🇭🇰 HK|香港1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇭🇰 HK|香港3|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20111, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇯🇵 JP|日本1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20112, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇭🇰 HK|香港2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇹🇼 TW|台湾1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20025, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇸🇬 SG|新加坡1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇸🇬 SG|新加坡2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇺🇸 US|美国1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20100, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇦🇫 AF|非洲1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20019, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇦🇫 AF|非洲2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20021, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,DIRECT
 - DOMAIN-SUFFIX,ip6-localhost,DIRECT

@@ -1,5 +1,5 @@
 %YAML 1.1
 ---
 proxies:
-- {name: 🇸🇬 SG|新加坡1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
-- {name: 🇸🇬 SG|新加坡2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: d6907ade-8742-47f7-acf7-ea326f62c275, udp: true}
+- {name: 🇸🇬 SG|新加坡1|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20007, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}
+- {name: 🇸🇬 SG|新加坡2|IEPL - Clarity VPN, server: sq.yd.3.07.cdnlinkms001.xyz, port: 20018, type: ss, cipher: chacha20-ietf-poly1305, password: 2f0043d5-5a3a-460f-8b21-29e4533040f7, udp: true}

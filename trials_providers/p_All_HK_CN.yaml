@@ -2,5 +2,5 @@
 ---
 proxies:
 - {name: 🇭🇰 香港-BGP - 野草, server: hk.xn--vl1a701a.xyz, port: 30007, type: trojan, password: 83405c40-4a27-41bf-a4da-13235ea8e160, sni: hk.xn--vl1a701a.xyz, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
-- {name: 🇭🇰 香港2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: ba663461-7ce7-48bd-b02c-e6c92ece1733, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港1|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: d62caa58-f44a-4abd-be15-17f4a846df93, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇭🇰 香港2|隧道|标准 - 兴鸿云, server: zz.xinghongzf.xyz, port: 17702, type: trojan, password: d62caa58-f44a-4abd-be15-17f4a846df93, sni: zz.xinghongzf.xyz, skip-cert-verify: true, udp: true}
