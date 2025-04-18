@@ -1,7 +1,9 @@
-# 优化后的源代码
+修复后的源码
 
-#以下是对提供的源代码进行优化后的版本，优化重点是在运行时遇到错误时能够自动处理，跳过或忽略错误，而不是让程序暂停或退出。
+以下是对报错信息进行修复后的完整源码，错误发生在函数参数的类型注解上，括号不匹配以及类型注解书写错误。以下是修复后的代码：
 
+markdown
+Copy Code
 ```python
 import os
 from concurrent.futures import ThreadPoolExecutor
@@ -17,25 +19,25 @@ from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths,
                    timestamp2str, to_zero, write, write_cfg)
 
 
-def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]):
-    url = cache['sub_url']]
+def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple:
+    url = cache['sub_url']
     suffix = ' - ' + g0(cache, 'name')
     if 'speed_limit' in opt:
         suffix += ' ⚠️限速 ' + opt['speed_limit']
     try:
         info, *rest = get(url, suffix)
     except Exception:
-        origin = urlsplit(session.origin):2]
+        origin = urlsplit(session.origin)2]
         url = '|'.join(urlunsplit(origin + urlsplit(part)2:]) for part in url.split('|'))
         info, *rest = get(url, suffix)
-        cache['sub_url']] = url
+    cache['sub_url'] = url
     if not info and hasattr(session, 'get_sub_info'):
-        session.login(cache['email']])
+        session.login(cache['email'])
         info = session.get_sub_info()
     return info, *rest
 
 
-def should_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]]):
+def should_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple:
     if 'sub_url' not in cache:
         return 1,
 
@@ -49,7 +51,8 @@ def should_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]]):
         not info
         or opt.get('turn') == 'always'
         or float(info['total']) - (float(info['upload']) + float(info['download'])) < (1 << 28)
-        or (opt.get('expire') != 'never' and info.get('expire') and str2timestamp(info.get('expire')) - now < ((now - str2timestamp(cache['time']])) / 7 if 'reg_limit' in opt else 2400))
+        or (opt.get('expire') != 'never' and info.get('expire') and str2timestamp(info.get('expire')) - now <
+            ((now - str2timestamp(cache['time']0])) / 7 if 'reg_limit' in opt else 2400))
     ), info, *rest
 
 
@@ -111,21 +114,21 @@ def register(session: PanelSession, opt: dict, cache: dictstr, liststr]], log: l
                 cache['auto_invite'] = 'T'
                 cache['invite_code'] = [code, num]
                 kwargs['invite_code'] = code
-            session.reset()
-        email = _get_email_and_email_code(kwargs, session, opt, cache)
+                session.reset()
+            email = _get_email_and_email_code(kwargs, session, opt, cache)
 
-    if 'invite_code' in kwargs:
-        if 'invite_code' not in cache or int(cache['invite_code']]) == 1 or randint(0, 1):
-            session.login()
-            try_buy(session, opt, cache, log)
-            try:
-                cache['invite_code'] = [*session.get_invite_info()[:2]]
-            except Exception:
-                pass
-        else:
-            n = int(cache['invite_code']1])
-            if n > 0:
-                cache['invite_code']1] = n - 1
+        if 'invite_code' in kwargs:
+            if 'invite_code' not in cache or int(cache['invite_code']]) == 1 or randint(0, 1):
+                session.login()
+                try_buy(session, opt, cache, log)
+                try:
+                    cache['invite_code'] = [*session.get_invite_info()[:2]]
+                except Exception:
+                    pass
+            else:
+                n = int(cache['invite_code']1])
+                if n > 0:
+                    cache['invite_code']] = n - 1
             return False
     return True
 
@@ -160,8 +163,8 @@ def try_buy(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: 
                 return session.buy(plan)
             except Exception:
                 del cache['buy']
-                cache.pop('auto_invite', None)
-                cache.pop('invite_code', None)
+        cache.pop('auto_invite', None)
+        cache.pop('invite_code', None)
         plan = session.buy()
         cache['buy'] = plan or 'pass'
         return plan
@@ -234,7 +237,7 @@ def cache_sub_info(info, opt: dict, cache: dict[str, list[str]]):
     else:
         ts = str2timestamp(info['expire'])
         expire = timestamp2str(ts)
-        rest += ' ' + str(timedelta(seconds=ts - time()))
+    rest += ' ' + str(timedelta(seconds=ts - time()))
     rest += ')'
     cache['sub_info'] = [size2str(used), size2str(total), expire, rest]
 
@@ -258,7 +261,7 @@ def save_sub(info, base64, clash, base64_url, clash_url, host, opt: dict, cache:
     node_n = save_sub_base64_and_clash(base64, clash, host, opt)
     if (d := node_n - int(g0(cache, 'node_n', 0))) != 0:
         log.append(f'{host} 节点数 {"+" if d > 0 else ""}{d} ({node_n})')
-        cache['node_n'] = node_n
+    cache['node_n'] = node_n
 
 
 def get_and_save(session: PanelSession, host, opt: dict, cache: dictstr, liststr]], log: list):
@@ -341,3 +344,6 @@ if __name__ == '__main__':
 
     print('总节点数', total_node_n)
     write_cfg('trial.cache', cache)
+
+markdown
+Copy Code
