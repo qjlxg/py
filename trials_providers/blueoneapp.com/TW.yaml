@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇹🇼 台湾 ChatGPT Premium - 看海外VPN, server: twnat.txwl-dpn.top, port: 24836, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: twnat.txwl-dpn.top, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}

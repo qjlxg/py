@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇯🇵 日本1 - Qlink, server: c1.yaogougou.me, port: 39002, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇯🇵 日本2 - Qlink, server: a1.yaogougou.me, port: 39002, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}

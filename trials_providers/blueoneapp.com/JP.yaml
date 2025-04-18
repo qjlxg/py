@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇯🇵 日本 ChatGPT Premium 2 - 看海外VPN, server: sea-t701.bestguarding.work, port: 2096, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: sea-t701.bestguarding.work, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}

@@ -1,0 +1,16 @@
+%YAML 1.1
+---
+proxies:
+- {name: ℹ️ 官网：qlink123.xyz - Qlink, server: c1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇭🇰 香港1 - Qlink, server: c1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇹🇼 台湾1 - Qlink, server: c1.yaogougou.me, port: 39005, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇯🇵 日本1 - Qlink, server: c1.yaogougou.me, port: 39002, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇺🇸 美国1 - Qlink, server: c1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇬🇧 英国1 - Qlink, server: c1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇸🇬 新加坡1 - Qlink, server: c1.yaogougou.me, port: 39004, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇭🇰 香港2 - Qlink, server: a1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇺🇸 美国2 - Qlink, server: a1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇹🇼 台湾2 - Qlink, server: a1.yaogougou.me, port: 39005, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇯🇵 日本2 - Qlink, server: a1.yaogougou.me, port: 39002, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇬🇧 英国2 - Qlink, server: a1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇸🇬 新加坡2 - Qlink, server: a1.yaogougou.me, port: 39004, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}

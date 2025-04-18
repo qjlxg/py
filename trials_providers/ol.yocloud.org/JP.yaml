@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇯🇵 ss日本test001 - YOYO云, server: zztwot.yocloud.org, port: 13762, type: ss, cipher: aes-256-gcm, password: 6bd08cc2-0250-4ea4-b989-7cb7ecce64a6, udp: true}

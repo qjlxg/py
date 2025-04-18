@@ -1,0 +1,16 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇭🇰 香港 Premium 1 - 看海外VPN, server: hkmoon01.txwl-dpn.top, port: 2096, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: hkmoon01.txwl-dpn.top, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}
+- {name: 🇭🇰 香港 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇭🇰 香港3--中转-NF - 老八云, server: sszz.246680.xyz, port: 42024, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇭🇰 {专线5倍}--香港3-NF - 老八云', server: zx.246680.xyz, port: 54115, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港3--中转-NF - 老八云 2, server: gzyd.246680.xyz, port: 54989, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港1--中转-NF - 老八云, server: gzyd.246680.xyz, port: 11168, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇭🇰 {专线5倍}--香港1-NF - 老八云', server: zx.246680.xyz, port: 57589, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港1--中转-NF - 老八云 2, server: sszz.246680.xyz, port: 42026, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港1-V6 - 老八云, server: hk1.246680.xyz, port: 35211, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港3-V6 - 老八云, server: hk3.246680.xyz, port: 35266, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇭🇰 香港1 - Qlink, server: c1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇭🇰 香港2 - Qlink, server: a1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇭🇰 HK(China) - Fitss, server: hk.01.ss.tjss.me, port: 2210, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}

@@ -1,0 +1,37 @@
+%YAML 1.1
+---
+proxies:
+- &id002 {name: 🇸🇬ᴛʀ | 新加坡 | sᴠɪᴘ¹ | 專線✨ - VNet极速云✈️🚀, server: hk-00.denza.xyz, port: 59000, type: vmess, uuid: f32f46a0-5138-42e0-bde9-52ab18a1f434, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- &id003 {name: 🇸🇬ᴛʀ | 新加坡 | 𝟭 | ɴᴇᴛғɪʟx⚡ - VNet极速云✈️🚀, server: hk-05.hotfox.cc, port: 59979, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: sg-01.wsgss.com, skip-cert-verify: true, udp: true}
+- &id004 {name: 🇸🇬ᴛʀ | 新加坡 | 𝟮 | ɴᴇᴛғɪʟx⚡ - VNet极速云✈️🚀, server: hk-05.hotfox.cc, port: 59980, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: sg-02.wsgss.com, skip-cert-verify: true, udp: true}
+- &id001 {name: 🇸🇬 新加坡05中转 - 简单云, server: twjpzznew.376897.xyz, port: 35828, type: trojan, password: 7c27ac02-88bd-4aac-8c6e-1cf0035f1ba3, sni: 2jdyun03c0d804c1-65d3-4507-8ef5-c557234fded1.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡 - 星连, server: sg04.dns-node.top, port: 45609, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- *id001
+- &id005 {name: 🇸🇬 新加坡 01 - ɢᴛᴀ ᴄʟᴏᴜᴅ, server: njmsioef.iwe.la, port: 26429, type: ss, cipher: aes-128-gcm, password: 9255ec95-8742-4bc6-b277-7df55e1d1ba8, udp: true}
+- &id006 {name: 🇸🇬 新加坡 02 - ɢᴛᴀ ᴄʟᴏᴜᴅ, server: gygyd.mmt.zhangwei.li, port: 17875, type: ss, cipher: aes-128-gcm, password: 9255ec95-8742-4bc6-b277-7df55e1d1ba8, udp: true}
+- &id007 {name: 🇸🇬 新加坡 03 - ɢᴛᴀ ᴄʟᴏᴜᴅ, server: mmt-gybb.zhangwei.li, port: 18953, type: ss, cipher: aes-128-gcm, password: 9255ec95-8742-4bc6-b277-7df55e1d1ba8, udp: true}
+- &id008 {name: 🇸🇬 新加坡 04 专线 - ɢᴛᴀ ᴄʟᴏᴜᴅ, server: mmt-clc.xuwei.hk, port: 55625, type: ss, cipher: aes-128-gcm, password: 9255ec95-8742-4bc6-b277-7df55e1d1ba8, udp: true}
+- {name: 🇸🇬 新加坡--中转-NF - 老八云, server: gzyd.246680.xyz, port: 43334, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇸🇬 {专线5倍}新加坡-NF - 老八云', server: zx.246680.xyz, port: 54111, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇸🇬 新加坡1 - Qlink, server: c1.yaogougou.me, port: 39004, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇸🇬 新加坡2 - Qlink, server: a1.yaogougou.me, port: 39004, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- *id002
+- *id003
+- *id004
+- *id001
+- *id005
+- *id006
+- *id007
+- *id008
+- &id009 {name: 🇸🇬 新加坡01隧道快 - AZ云, server: twjpzznew.376897.xyz, port: 22252, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}
+- &id010 {name: 🇸🇬 新加坡01隧道4 - AZ云, server: twjpzz2.376897.xyz, port: 31203, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}
+- &id011 {name: 🇸🇬 新加坡01隧道5 - AZ云, server: twjpzz2.376897.xyz, port: 13855, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}
+- *id005
+- *id006
+- *id007
+- *id008
+- {name: 🇸🇬 SG (Singapore) - Fitss, server: sg.1.ss.tjss.me, port: 55110, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- *id001
+- *id009
+- *id010
+- *id011

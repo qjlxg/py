@@ -1,0 +1,24 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇺🇸 美国 - 星连, server: us01.dns-node.top, port: 45581, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇺🇸 美国1--中转 - 老八云, server: gzyd.246680.xyz, port: 46397, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇺🇸 {专线5倍}-美国1 - 老八云', server: zx.246680.xyz, port: 16666, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国1--中转 - 老八云 2, server: sszz.246680.xyz, port: 42001, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国2--中转 - 老八云, server: gzyd.246680.xyz, port: 13879, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇺🇸 {专线5倍}--美国2 - 老八云', server: zx.246680.xyz, port: 22395, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国2--中转 - 老八云 2, server: sszz.246680.xyz, port: 42009, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国4--中转-NF - 老八云, server: gzyd.246680.xyz, port: 41061, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国4--中转-NF - 老八云 2, server: sszz.246680.xyz, port: 42022, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国3--中转-NF - 老八云, server: sszz.246680.xyz, port: 42033, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇺🇸 {专线5倍}美国4--NF - 老八云', server: zx.246680.xyz, port: 54117, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国5--中转 - 老八云, server: gzyd.246680.xyz, port: 43933, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国5--中转 - 老八云 2, server: sszz.246680.xyz, port: 42023, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇺🇸 {专线5倍}--美国5 - 老八云', server: zx.246680.xyz, port: 54116, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国1-V6 - 老八云, server: us1.246680.xyz, port: 35193, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国2-V6 - 老八云, server: us2.246680.xyz, port: 35195, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇺🇸 {专线5倍}--美国3-NF - 老八云', server: zx.246680.xyz, port: 49865, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇺🇸 美国1 - Qlink, server: c1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇺🇸 美国2 - Qlink, server: a1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇺🇸 US (LosAngeles) - Fitss, server: us.1.ss.tjss.me, port: 2310, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇺🇸 美国洛杉矶1 - V2Board, server: 149.28.76.249, port: 10081, type: ss, cipher: chacha20-ietf-poly1305, password: 1eb901c4-c395-4f1e-94be-bc865459901e, udp: true}

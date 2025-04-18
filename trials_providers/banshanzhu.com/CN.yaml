@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇭🇰 香港1 - Qlink, server: c1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇹🇼 台湾1 - Qlink, server: c1.yaogougou.me, port: 39005, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇭🇰 香港2 - Qlink, server: a1.yaogougou.me, port: 39003, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇹🇼 台湾2 - Qlink, server: a1.yaogougou.me, port: 39005, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}

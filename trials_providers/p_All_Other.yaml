@@ -1,0 +1,68 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇦🇺 澳洲 ChatGPT Premium - 看海外VPN, server: sea-t401.bestguarding.work, port: 2096, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: sea-t401.bestguarding.work, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}
+- {name: 🇹🇷 土耳其 ChatGPT Premium - 看海外VPN, server: sea-t501.bestguarding.work, port: 2096, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: sea-t501.bestguarding.work, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}
+- {name: 🇰🇷 韩国 ChatGPT Premium - 看海外VPN, server: sea-t601.bestguarding.work, port: 2096, type: trojan, password: 74ac9a20-2311-444e-93bd-a66d36880533, sni: sea-t601.bestguarding.work, skip-cert-verify: true, network: grpc, grpc-opts: {grpc-service-name: GunService}, udp: true}
+- {name: ℹ️ ❤官网｜SingLinkVPN.com - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: ℹ️ ❤注册免费送套餐 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: ℹ️ ❤购买Pro计划更快速 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇰🇷 韩国 - 星连, server: jp01.dns-node.top, port: 45572, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇬🇧 英国 - 星连, server: uk01.dns-node.top, port: 45615, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇲🇾 马来西亚 - 星连, server: sg04.dns-node.top, port: 45610, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇮🇩 印度尼西亚 - 星连, server: sg03.dns-node.top, port: 45608, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇳🇿 新西兰 - 星连, server: sg04.dns-node.top, port: 45611, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇦🇺 澳大利亚 - 星连, server: sg03.dns-node.top, port: 45607, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇵🇰 巴基斯坦 - 星连, server: sg03.dns-node.top, port: 45800, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇦🇹 奥地利 - 星连, server: eu.dns-node.top, port: 43800, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇩🇪 德国 - 星连, server: eu.dns-node.top, port: 45594, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇪🇬 埃及 - 星连, server: eu.dns-node.top, port: 45595, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇫🇷 法国 - 星连, server: eu.dns-node.top, port: 45597, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇮🇳 印度 - 星连, server: eu.dns-node.top, port: 45598, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇳🇬 尼日利亚 - 星连, server: eu.dns-node.top, port: 45601, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇹🇷 土耳其 - 星连, server: eu.dns-node.top, port: 45602, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇦🇷 阿根廷 - 星连, server: us_nord.dns-node.top, port: 45583, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇧🇷 巴西 - 星连, server: us03.dns-node.top, port: 45585, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇨🇦 加拿大 - 星连, server: us_nord.dns-node.top, port: 45586, type: ss, cipher: aes-128-gcm, password: 89a16193-f282-40ba-b2d8-96753d9cab0e, udp: true}
+- {name: 🇷🇺 俄罗斯--中转 - 老八云, server: gzyd.246680.xyz, port: 59409, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇷🇺 {专线5倍}--俄罗斯 - 老八云', server: zx.246680.xyz, port: 43726, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇷🇺 俄罗斯--中转 - 老八云 2, server: sszz.246680.xyz, port: 42000, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇰🇷 {专线5倍}--韩国4 - 老八云', server: zx.246680.xyz, port: 17130, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国4--中转 - 老八云, server: gzyd.246680.xyz, port: 11944, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国4--中转 - 老八云 2, server: sszz.246680.xyz, port: 42002, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国3--中转 - 老八云, server: gzyd.246680.xyz, port: 48997, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇰🇷 韩国3--{中转} - 老八云', server: sszz.246680.xyz, port: 42004, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇩🇪 德国--中转-NF - 老八云, server: gzyd.246680.xyz, port: 28727, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇩🇪 {专线5倍}--德国-NF - 老八云', server: zx.246680.xyz, port: 29305, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇩🇪 德国--中转 - 老八云, server: sszz.246680.xyz, port: 42008, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国2--中转 - 老八云, server: gzyd.246680.xyz, port: 44303, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国2--中转 - 老八云 2, server: sszz.246680.xyz, port: 42010, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国1--中转-NF - 老八云, server: gzyd.246680.xyz, port: 48068, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国1--中转-NF - 老八云 2, server: sszz.246680.xyz, port: 42020, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: '🇰🇷 {专线5倍}韩国1-NF - 老八云', server: zx.246680.xyz, port: 45991, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国4-V6 - 老八云, server: kr4.246680.xyz, port: 35197, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇩🇪 德国-V6 - 老八云, server: deg.246680.xyz, port: 35215, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇰🇷 韩国2-V6 - 老八云, server: kr2.246680.xyz, port: 35219, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: 🇷🇺 俄罗斯-V6-0.1 - 老八云, server: els.246680.xyz, port: 35225, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
+- {name: ℹ️ 官网：qlink123.xyz - Qlink, server: c1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇬🇧 英国1 - Qlink, server: c1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: 🇬🇧 英国2 - Qlink, server: a1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
+- {name: '🇸🇮 Gói: Dùng Thử - 4G SIÊU TỐC', server: japan.4gsieutoc.tokyo, port: 80, type: vmess, uuid: 97421ad3-464f-45ad-be28-16543d4e02ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4gsieutoc.tokyo, headers: {Host: m.tiktok.com}}, udp: true}
+- {name: 🇸🇮 SNI：Nền TikTok Viettel - 4G SIÊU TỐC, server: japan.4gsieutoc.tokyo, port: 80, type: vmess, uuid: 97421ad3-464f-45ad-be28-16543d4e02ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4gsieutoc.tokyo, headers: {Host: m.tiktok.com}}, udp: true}
+- {name: '🇸🇮 Hạn SD: 20-04-2025 - 4G SIÊU TỐC', server: japan.4gsieutoc.tokyo, port: 80, type: vmess, uuid: 97421ad3-464f-45ad-be28-16543d4e02ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4gsieutoc.tokyo, headers: {Host: m.tiktok.com}}, udp: true}
+- {name: 🇸🇮 Japan 1 - 4G SIÊU TỐC, server: japan.4gsieutoc.tokyo, port: 80, type: vmess, uuid: 97421ad3-464f-45ad-be28-16543d4e02ef, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /4gsieutoc.tokyo, headers: {Host: m.tiktok.com}}, udp: true}
+- {name: 🇸🇮 Japan 2 - 4G SIÊU TỐC, server: japan.4gsieutoc.tokyo, port: 443, type: trojan, password: 97421ad3-464f-45ad-be28-16543d4e02ef, sni: m.tiktok.com, skip-cert-verify: true, udp: true}
+- {name: 影视线路 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 影视线路1 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 影视线路2 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 影视线路3 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 影视线路4 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 影视线路5 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: f6cd8678-f08c-4691-a35e-0d9568e921cb, udp: true}
+- {name: 🇰🇷 KR (Seoul) - Fitss, server: kr.1.ss.tjss.me, port: 55112, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇮🇳 IN (Mumbai) - Fitss, server: in.1.ss.tjss.me, port: 55113, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇬🇧 UK (London) - Fitss, server: uk.1.ss.tjss.me, port: 2412, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇪🇸 ES (Madrid) - Fitss, server: es.1.ss.tjss.me, port: 55114, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇩🇪 DE (Frankfurt) - Fitss, server: de.1.ss.tjss.me, port: 55115, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇳🇱 NL (Amsterdam) - Fitss, server: nl.1.ss.tjss.me, port: 55116, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇵🇭 PH (Manila) - Fitss, server: ph.1.ss.tjss.me, port: 55117, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
+- {name: 🇻🇳 VN (Hanoi) - Fitss, server: vn.1.ss.tjss.me, port: 55118, type: ss, cipher: chacha20-ietf-poly1305, password: a5c517a4-2032-42d1-84c9-5e959c41dcba, udp: true}
