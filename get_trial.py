@@ -1,54 +1,34 @@
-#```python
-import os
-from concurrent.futures import ThreadPoolExecutor
-from datetime import timedelta
-from random import choice, randint
-from time import time
-from urllib.parse import urlsplit, urlunsplit
-
-from apis import PanelSession, TempEmail, guess_panel, panel_class_map
-from subconverter import gen_base64_and_clash_config, get
-from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths,
-                   rand_id, read, read_cfg, remove, size2str, str2timestamp,
-                   timestamp2str, to_zero, write, write_cfg)
-
-
-# 修复函数参数类型注解和括号匹配问题
-def get_sub(session: PanelSession, opt: dict, cache: dict[str, list[str]]) -> tuple:
-    url = cache['sub_url']
-    suffix = ' - ' + g0(cache, 'name')
-    if 'speed_limit' in opt:
-        suffix += ' ⚠️限速 ' + opt['speed_limit']
-    try:
-        info, *rest = get(url, suffix)
-    except Exception:
-        origin = urlsplit(session.origin)‌:ml-citation{ref="2" data="citationList"}  # 修复索引访问语法
-        url = '|'.join(urlunsplit(origin + urlsplit(part)[2:]) for part in url.split('|'))
-        info, *rest = get(url, suffix)
-    cache['sub_url'] = url
-    if not info and hasattr(session, 'get_sub_info'):
-        session.login(cache['email'])  # 修复列表索引访问
-        info = session.get_sub_info()
+import os 
+from concurrent.futures import ThreadPoolExecutor 
+from datetime import timedelta 
+from random import choice, randint 
+from time import time 
+from urllib.parse import urlsplit, urlunsplit 
+ 
+from apis import PanelSession, TempEmail, guess_panel, panel_class_map 
+from subconverter import gen_base64_and_clash_config, get 
+from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths, 
+ rand_id, read, read_cfg, remove, size2str, str2timestamp, 
+ timestamp2str, to_zero, write, write_cfg) 
+ 
+ 
+# 修复函数参数类型注解和括号匹配问题 
+def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple: 
+    url = cache['sub_url'] 
+    suffix = ' - ' + g0(cache, 'name') 
+    if 'speed_limit' in opt: 
+        suffix += ' ⚠️限速 ' + opt['speed_limit'] 
+    try: 
+        info, *rest = get(url, suffix) 
+    except Exception: 
+        origin = urlsplit(session.origin)  # 修复索引访问语法错误，移除不可打印字符
+        url = '|'.join(urlunsplit(origin + urlsplit(part)2:]) for part in url.split('|')) 
+        info, *rest = get(url, suffix) 
+    cache['sub_url'] = url 
+    if not info and hasattr(session, 'get_sub_info'): 
+        session.login(cache['email'])  # 修复列表索引访问错误
+        info = session.get_sub_info() 
     return info, *rest
-
-
-def should_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple:
-    if 'sub_url' not in cache:
-        return 1,
-
-    now = time()
-    try:
-        info, *rest = get_sub(session, opt, cache)
-    except Exception:
-        return 1,
-
-    return int(
-        not info
-        or opt.get('turn') == 'always'
-        or float(info['total']) - (float(info['upload']) + float(info['download'])) < (1 << 28)
-        or (opt.get('expire') != 'never' and info.get('expire') and str2timestamp(info.get('expire')) - now <
-            ((now - str2timestamp(cache['time']0])) / 7 if 'reg_limit' in opt else 2400))
-    ), info, *rest
 
 
 def _register(session: PanelSession, email, *args, **kwargs):
