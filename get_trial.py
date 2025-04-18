@@ -48,7 +48,7 @@ def _get_email_and_email_code(kwargs, session: PanelSession, opt: dict, cache: d
         try:
             session.send_email_code(email)
         except Exception:
-            cache['banned_domains'].append(email.split('@')1)
+            cache['banned_domains'].append(email.split('@')[1])
             continue
         email_code = tm.get_email_code(g0(cache, 'name'))
         if not email_code:
