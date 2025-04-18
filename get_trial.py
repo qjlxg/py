@@ -13,7 +13,8 @@ from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths,
                    timestamp2str, to_zero, write, write_cfg)
 
 
-def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple:
+# 修复函数参数类型注解和括号匹配问题
+def get_sub(session: PanelSession, opt: dict, cache: dict[str, list[str]]) -> tuple:
     url = cache['sub_url']
     suffix = ' - ' + g0(cache, 'name')
     if 'speed_limit' in opt:
@@ -21,12 +22,12 @@ def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tupl
     try:
         info, *rest = get(url, suffix)
     except Exception:
-        origin = urlsplit(session.origin)2]
-        url = '|'.join(urlunsplit(origin + urlsplit(part)2:]) for part in url.split('|'))
+        origin = urlsplit(session.origin)‌:ml-citation{ref="2" data="citationList"}  # 修复索引访问语法
+        url = '|'.join(urlunsplit(origin + urlsplit(part)[2:]) for part in url.split('|'))
         info, *rest = get(url, suffix)
     cache['sub_url'] = url
     if not info and hasattr(session, 'get_sub_info'):
-        session.login(cache['email'])
+        session.login(cache['email'])  # 修复列表索引访问
         info = session.get_sub_info()
     return info, *rest
 
