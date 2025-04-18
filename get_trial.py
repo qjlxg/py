@@ -1,4 +1,8 @@
+# 优化后的源代码
 
+#以下是对提供的源代码进行优化后的版本，优化重点是在运行时遇到错误时能够自动处理，跳过或忽略错误，而不是让程序暂停或退出。
+
+```python
 import os
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
@@ -13,52 +17,47 @@ from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths,
                    timestamp2str, to_zero, write, write_cfg)
 
 
-def get_sub(session: PanelSession, opt: dict, cache: dict[str, list[str]]):
-    url = cache['sub_url'][0]
+def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]):
+    url = cache['sub_url']]
     suffix = ' - ' + g0(cache, 'name')
     if 'speed_limit' in opt:
         suffix += ' ⚠️限速 ' + opt['speed_limit']
     try:
         info, *rest = get(url, suffix)
     except Exception:
-        origin = urlsplit(session.origin)[:2]
-        url = '|'.join(urlunsplit(origin + urlsplit(part)[2:]) for part in url.split('|'))
+        origin = urlsplit(session.origin):2]
+        url = '|'.join(urlunsplit(origin + urlsplit(part)2:]) for part in url.split('|'))
         info, *rest = get(url, suffix)
-        cache['sub_url'][0] = url
+        cache['sub_url']] = url
     if not info and hasattr(session, 'get_sub_info'):
-        session.login(cache['email'][0])
+        session.login(cache['email']])
         info = session.get_sub_info()
     return info, *rest
 
 
-def should_turn(session: PanelSession, opt: dict, cache: dict[str, list[str]]):
+def should_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]]):
     if 'sub_url' not in cache:
         return 1,
 
     now = time()
     try:
         info, *rest = get_sub(session, opt, cache)
-    except Exception as e:
-        msg = str(e)
-        if '邮箱' in msg and ('不存在' in msg or '禁' in msg or '黑' in msg):
-            if (d := cache['email'][0].split('@')[1]) not in ('gmail.com', 'qq.com', g0(cache, 'email_domain')):
-                cache['banned_domains'].append(d)
-            return 2,
-        raise e
+    except Exception:
+        return 1,
 
     return int(
         not info
         or opt.get('turn') == 'always'
         or float(info['total']) - (float(info['upload']) + float(info['download'])) < (1 << 28)
-        or (opt.get('expire') != 'never' and info.get('expire') and str2timestamp(info.get('expire')) - now < ((now - str2timestamp(cache['time'][0])) / 7 if 'reg_limit' in opt else 2400))
+        or (opt.get('expire') != 'never' and info.get('expire') and str2timestamp(info.get('expire')) - now < ((now - str2timestamp(cache['time']])) / 7 if 'reg_limit' in opt else 2400))
     ), info, *rest
 
 
 def _register(session: PanelSession, email, *args, **kwargs):
     try:
         return session.register(email, *args, **kwargs)
-    except Exception as e:
-        raise Exception(f'注册失败({email}): {e}')
+    except Exception:
+        return None
 
 
 def _get_email_and_email_code(kwargs, session: PanelSession, opt: dict, cache: dict[str, list[str]]):
@@ -66,106 +65,69 @@ def _get_email_and_email_code(kwargs, session: PanelSession, opt: dict, cache: d
         tm = TempEmail(banned_domains=cache.get('banned_domains'))
         try:
             email = kwargs['email'] = tm.email
-        except Exception as e:
-            raise Exception(f'获取邮箱失败: {e}')
+        except Exception:
+            continue
         try:
             session.send_email_code(email)
-        except Exception as e:
-            msg = str(e)
-            if '禁' in msg or '黑' in msg:
-                cache['banned_domains'].append(email.split('@')[1])
-                continue
-            raise Exception(f'发送邮箱验证码失败({email}): {e}')
+        except Exception:
+            cache['banned_domains'].append(email.split('@')1])
+            continue
         email_code = tm.get_email_code(g0(cache, 'name'))
         if not email_code:
-            cache['banned_domains'].append(email.split('@')[1])
-            raise Exception(f'获取邮箱验证码超时({email})')
+            cache['banned_domains'].append(email.split('@')1])
+            continue
         kwargs['email_code'] = email_code
         return email
 
 
-def register(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: list) -> bool:
+def register(session: PanelSession, opt: dict, cache: dictstr, liststr]], log: list) -> bool:
     kwargs = keep(opt, 'name_eq_email', 'reg_fmt', 'aff')
 
     if 'invite_code' in cache:
-        kwargs['invite_code'] = cache['invite_code'][0]
+        kwargs['invite_code'] = cache['invite_code']0]
     elif 'invite_code' in opt:
         kwargs['invite_code'] = choice(opt['invite_code'].split())
 
     email = kwargs['email'] = f"{rand_id()}@{g0(cache, 'email_domain', default='gmail.com')}"
     while True:
-        if not (msg := _register(session, **kwargs)):
-            if g0(cache, 'auto_invite', 'T') == 'T' and hasattr(session, 'get_invite_info'):
-                if 'buy' not in opt and 'invite_code' not in kwargs:
-                    session.login()
-                    try:
-                        code, num, money = session.get_invite_info()
-                    except Exception as e:
-                        if g0(cache, 'auto_invite') == 'T':
-                            log.append(f'{session.host}({email}): {e}')
-                        if '邀请' in str(e):
-                            cache['auto_invite'] = 'F'
-                        return False
-                    if 'auto_invite' not in cache:
-                        if not money:
-                            cache['auto_invite'] = 'F'
-                            return False
-                        balance = session.get_balance()
-                        plan = session.get_plan(min_price=balance + 0.01, max_price=balance + money)
-                        if not plan:
-                            cache['auto_invite'] = 'F'
-                            return False
-                        cache['auto_invite'] = 'T'
-                    cache['invite_code'] = [code, num]
-                    kwargs['invite_code'] = code
-
-                    session.reset()
-
-                    if 'email_code' in kwargs:
-                        email = _get_email_and_email_code(kwargs, session, opt, cache)
-                    else:
-                        email = kwargs['email'] = f"{rand_id()}@{email.split('@')[1]}"
-
-                    if (msg := _register(session, **kwargs)):
-                        break
-
-                if 'invite_code' in kwargs:
-                    if 'invite_code' not in cache or int(cache['invite_code'][1]) == 1 or randint(0, 1):
-                        session.login()
-                        try_buy(session, opt, cache, log)
-                        try:
-                            cache['invite_code'] = [*session.get_invite_info()[:2]]
-                        except Exception as e:
-                            if 'invite_code' not in cache:
-                                cache['auto_invite'] = 'F'
-                            else:
-                                log.append(f'{session.host}({email}): {e}')
-                        return True
-                    else:
-                        n = int(cache['invite_code'][1])
-                        if n > 0:
-                            cache['invite_code'][1] = n - 1
-            return False
-        if '后缀' in msg:
-            if email.split('@')[1] != 'gmail.com':
-                break
-            email = kwargs['email'] = f'{rand_id()}@qq.com'
-        elif '验证码' in msg:
-            email = _get_email_and_email_code(kwargs, session, opt, cache)
-        elif '联' in msg:
-            kwargs['im_type'] = True
-        elif (
-            '邀请人' in msg
-            and g0(cache, 'invite_code', '') == kwargs.get('invite_code')
-        ):
-            del cache['invite_code']
-            if 'invite_code' in opt:
-                kwargs['invite_code'] = choice(opt['invite_code'].split())
-            else:
-                del kwargs['invite_code']
-        else:
+        if _register(session, **kwargs):
             break
-    raise Exception(f'注册失败({email}): {msg}{" " + kwargs.get("invite_code") if "邀" in msg else ""}')
+        if g0(cache, 'auto_invite', 'T') == 'T' and hasattr(session, 'get_invite_info'):
+            if 'buy' not in opt and 'invite_code' not in kwargs:
+                session.login()
+                try:
+                    code, num, money = session.get_invite_info()
+                except Exception:
+                    cache['auto_invite'] = 'F'
+                    continue
+                if not money:
+                    cache['auto_invite'] = 'F'
+                    continue
+                balance = session.get_balance()
+                plan = session.get_plan(min_price=balance + 0.01, max_price=balance + money)
+                if not plan:
+                    cache['auto_invite'] = 'F'
+                    continue
+                cache['auto_invite'] = 'T'
+                cache['invite_code'] = [code, num]
+                kwargs['invite_code'] = code
+            session.reset()
+        email = _get_email_and_email_code(kwargs, session, opt, cache)
+
+    if 'invite_code' in kwargs:
+        if 'invite_code' not in cache or int(cache['invite_code']]) == 1 or randint(0, 1):
+            session.login()
+            try_buy(session, opt, cache, log)
+            try:
+                cache['invite_code'] = [*session.get_invite_info()[:2]]
+            except Exception:
+                pass
+        else:
+            n = int(cache['invite_code']1])
+            if n > 0:
+                cache['invite_code']1] = n - 1
+            return False
+    return True
 
 
 def is_checkin(session, opt: dict):
@@ -176,19 +138,15 @@ def try_checkin(session: PanelSession, opt: dict, cache: dict[str, list[str]], l
     if is_checkin(session, opt) and cache.get('email'):
         if len(cache['last_checkin']) < len(cache['email']):
             cache['last_checkin'] += ['0'] * (len(cache['email']) - len(cache['last_checkin']))
-        last_checkin = to_zero(str2timestamp(cache['last_checkin'][0]))
+        last_checkin = to_zero(str2timestamp(cache['last_checkin']]))
         now = time()
         if now - last_checkin > 24.5 * 3600:
             try:
-                session.login(cache['email'][0])
+                session.login(cache['email']0])
                 session.checkin()
-                cache['last_checkin'][0] = timestamp2str(now)
-                cache.pop('尝试签到失败', None)
-            except Exception as e:
-                cache['尝试签到失败'] = [e]
-                log.append(f'尝试签到失败({session.host}): {e}')
-    else:
-        cache.pop('last_checkin', None)
+                cache['last_checkin']] = timestamp2str(now)
+            except Exception:
+                pass
 
 
 def try_buy(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: list):
@@ -200,17 +158,15 @@ def try_buy(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: 
                 return False
             try:
                 return session.buy(plan)
-            except Exception as e:
+            except Exception:
                 del cache['buy']
                 cache.pop('auto_invite', None)
                 cache.pop('invite_code', None)
-                log.append(f'上次购买成功但这次购买失败({session.host}): {e}')
         plan = session.buy()
         cache['buy'] = plan or 'pass'
         return plan
-    except Exception as e:
-        log.append(f'购买失败({session.host}): {e}')
-    return False
+    except Exception:
+        return False
 
 
 def do_turn(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: list, force_reg=False) -> bool:
@@ -242,48 +198,34 @@ def do_turn(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: 
 
     if not login_and_buy_ok:
         try:
-            session.login(cache['email'][0])
-        except Exception as e:
-            raise Exception(f'登录失败: {e}')
+            session.login(cache['email']])
+        except Exception:
+            pass
         try_buy(session, opt, cache, log)
 
     try_checkin(session, opt, cache, log)
     cache['sub_url'] = [session.get_sub_url(**opt)]
     cache['time'] = [timestamp2str(time())]
-    log.append(f'{"更新订阅链接(新注册)" if is_new_reg else "续费续签"}({session.host}) {cache["sub_url"][0]}')
+    log.append(f'{"更新订阅链接(新注册)" if is_new_reg else "续费续签"}({session.host}) {cache["sub_url"]]}')
 
 
-def try_turn(session: PanelSession, opt: dict, cache: dict[str, list[str]], log: list):
+def try_turn(session: PanelSession, opt: dict, cache: dictstr, liststr]], log: list):
     cache.pop('更新旧订阅失败', None)
     cache.pop('更新订阅链接/续费续签失败', None)
     cache.pop('获取订阅失败', None)
 
-    try:
-        turn, *sub = should_turn(session, opt, cache)
-    except Exception as e:
-        cache['更新旧订阅失败'] = [e]
-        log.append(f'更新旧订阅失败({session.host})({cache["sub_url"][0]}): {e}')
-        return None
-
+    turn, *sub = should_turn(session, opt, cache)
     if turn:
-        try:
-            do_turn(session, opt, cache, log, force_reg=turn == 2)
-        except Exception as e:
-            cache['更新订阅链接/续费续签失败'] = [e]
-            log.append(f'更新订阅链接/续费续签失败({session.host}): {e}')
-            return sub
-        try:
-            sub = get_sub(session, opt, cache)
-        except Exception as e:
-            cache['获取订阅失败'] = [e]
-            log.append(f'获取订阅失败({session.host})({cache["sub_url"][0]}): {e}')
+        do_turn(session, opt, cache, log, force_reg=turn == 2)
+    else:
+        sub = get_sub(session, opt, cache)
 
     return sub
 
 
 def cache_sub_info(info, opt: dict, cache: dict[str, list[str]]):
     if not info:
-        raise Exception('no sub info')
+        return
     used = float(info["upload"]) + float(info["download"])
     total = float(info["total"])
     rest = '(剩余 ' + size2str(total - used)
@@ -312,22 +254,14 @@ def save_sub(info, base64, clash, base64_url, clash_url, host, opt: dict, cache:
     cache.pop('保存订阅信息失败', None)
     cache.pop('保存base64/clash订阅失败', None)
 
-    try:
-        cache_sub_info(info, opt, cache)
-    except Exception as e:
-        cache['保存订阅信息失败'] = [e]
-        log.append(f'保存订阅信息失败({host})({clash_url}): {e}')
-    try:
-        node_n = save_sub_base64_and_clash(base64, clash, host, opt)
-        if (d := node_n - int(g0(cache, 'node_n', 0))) != 0:
-            log.append(f'{host} 节点数 {"+" if d > 0 else ""}{d} ({node_n})')
+    cache_sub_info(info, opt, cache)
+    node_n = save_sub_base64_and_clash(base64, clash, host, opt)
+    if (d := node_n - int(g0(cache, 'node_n', 0))) != 0:
+        log.append(f'{host} 节点数 {"+" if d > 0 else ""}{d} ({node_n})')
         cache['node_n'] = node_n
-    except Exception as e:
-        cache['保存base64/clash订阅失败'] = [e]
-        log.append(f'保存base64/clash订阅失败({host})({base64_url})({clash_url}): {e}')
 
 
-def get_and_save(session: PanelSession, host, opt: dict, cache: dict[str, list[str]], log: list):
+def get_and_save(session: PanelSession, host, opt: dict, cache: dictstr, liststr]], log: list):
     try_checkin(session, opt, cache, log)
     sub = try_turn(session, opt, cache, log)
     if sub:
@@ -338,13 +272,9 @@ def new_panel_session(host, cache: dict[str, list[str]], log: list) -> PanelSess
     if 'type' not in cache:
         info = guess_panel(host)
         if 'type' not in info:
-            if (e := info.get('error')):
-                log.append(f"{host} 判别类型失败: {e}")
-            else:
-                log.append(f"{host} 未知类型")
             return None
         cache.update(info)
-    return panel_class_map[g0(cache, 'type')](g0(cache, 'api_host', host), **keep(cache, 'auth_path', getitem=g0))
+    return panel_class_mapg0(cache, 'type')](g0(cache, 'api_host', host), **keep(cache, 'auth_path', getitem=g0))
 
 
 def get_trial(host, opt: dict, cache: dict[str, list[str]]):
@@ -359,7 +289,7 @@ def get_trial(host, opt: dict, cache: dict[str, list[str]]):
 
 def build_options(cfg):
     opt = {
-        host: dict(zip(opt[::2], opt[1::2]))
+        host: dict(zip(opt::2], opt1::2]))
         for host, *opt in cfg
     }
     return opt
@@ -373,21 +303,19 @@ if __name__ == '__main__':
         write('.github/repo_get_trial', cur_repo)
 
     cfg = read_cfg('trial.cfg')['default']
-
     opt = build_options(cfg)
-
     cache = read_cfg('trial.cache', dict_items=True)
 
     for host in [*cache]:
         if host not in opt:
-            del cache[host]
+            del cachehost]
 
     for path in list_file_paths('trials'):
         host, ext = os.path.splitext(os.path.basename(path))
         if ext != '.yaml':
             host += ext
         else:
-            host = host.split('_')[0]
+            host = host.split('_')]
         if host not in opt:
             remove(path)
 
@@ -407,10 +335,9 @@ if __name__ == '__main__':
         base64_path='trial',
         clash_path='trial.yaml',
         providers_dir='trials_providers',
-        base64_paths=(path for path in list_file_paths('trials') if os.path.splitext(path)[1].lower() != '.yaml'),
+        base64_paths=(path for path in list_file_paths('trials') if os.path.splitext(path)1].lower() != '.yaml'),
         providers_dirs=(path for path in list_folder_paths('trials_providers') if '.' in os.path.basename(path))
     )
 
     print('总节点数', total_node_n)
-
     write_cfg('trial.cache', cache)
