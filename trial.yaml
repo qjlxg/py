@@ -9,8 +9,48 @@ proxy-groups:
 - name: ✈️ ‍起飞
   type: select
   proxies:
+  - ⚡ ‍低延迟
+  - 👆🏻 ‍指定
+  - 🇭🇰 ‍香港
+  - 🇹🇼 ‍台湾
+  - 🇨🇳 ‍中国
+  - 🇸🇬 ‍新加坡
+  - 🇯🇵 ‍日本
+  - 🇺🇸 ‍美国
+  - 🎏 ‍其他
+  - 👆🏻🇭🇰 ‍香港
+  - 👆🏻🇹🇼 ‍台湾
+  - 👆🏻🇨🇳 ‍中国
+  - 👆🏻🇸🇬 ‍新加坡
+  - 👆🏻🇯🇵 ‍日本
+  - 👆🏻🇺🇸 ‍美国
+  - 👆🏻🎏 ‍其他
   - DIRECT
   - REJECT
+- name: ⚡ ‍低延迟
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 30
+  tolerance: 100
+  proxies: &id001
+  - 🇭🇰 HK(China) - Fitss
+  - 🇹🇼 TW (China) - Fitss
+  - 🇸🇬 SG (Singapore) - Fitss
+  - 🇯🇵 JP (ToKyo) - Fitss
+  - 🇺🇸 US (LosAngeles) - Fitss
+  - ℹ️ 💳 前往：csj20.com 购买 - 穿山甲
+  - ℹ️ 💳 前往：csj20.com 购买 - 穿山甲
+  - 🇰🇷 KR (Seoul) - Fitss
+  - 🇮🇳 IN (Mumbai) - Fitss
+  - 🇬🇧 UK (London) - Fitss
+  - 🇪🇸 ES (Madrid) - Fitss
+  - 🇩🇪 DE (Frankfurt) - Fitss
+  - 🇳🇱 NL (Amsterdam) - Fitss
+  - 🇵🇭 PH (Manila) - Fitss
+  - 🇻🇳 VN (Hanoi) - Fitss
+- name: 👆🏻 ‍指定
+  type: select
+  proxies: *id001
 - name: 🛩️ ‍墙内
   type: select
   proxies:
@@ -27,11 +67,29 @@ proxy-groups:
   type: select
   proxies:
   - 🛩️ ‍墙内
+  - 🇭🇰 ‍香港
+  - 🇹🇼 ‍台湾
+  - 🇨🇳 ‍中国
   - ✈️ ‍起飞
+  - 👆🏻🇭🇰 ‍香港
+  - 👆🏻🇹🇼 ‍台湾
+  - 👆🏻🇨🇳 ‍中国
+  - 👆🏻 ‍指定
 - name: 🤖 ‍AI
   type: select
   proxies:
+  - 🇺🇸 ‍美国
+  - 🇹🇼 ‍台湾
+  - 🇸🇬 ‍新加坡
+  - 🇯🇵 ‍日本
+  - 🎏 ‍其他
   - ✈️ ‍起飞
+  - 👆🏻🇺🇸 ‍美国
+  - 👆🏻🇹🇼 ‍台湾
+  - 👆🏻🇸🇬 ‍新加坡
+  - 👆🏻🇯🇵 ‍日本
+  - 👆🏻🎏 ‍其他
+  - 👆🏻 ‍指定
   - 🛩️ ‍墙内
 - name: 🌐 ‍未知站点
   type: select
@@ -39,7 +97,101 @@ proxy-groups:
   - ✈️ ‍起飞
   - 🛩️ ‍墙内
   - 💩 ‍广告
-proxies: []
+- name: 🇭🇰 ‍香港
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id002
+  - 🇭🇰 HK(China) - Fitss
+- name: 🇹🇼 ‍台湾
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id003
+  - 🇹🇼 TW (China) - Fitss
+- name: 🇨🇳 ‍中国
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id004
+  - 🇭🇰 HK(China) - Fitss
+  - 🇹🇼 TW (China) - Fitss
+- name: 🇸🇬 ‍新加坡
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id005
+  - 🇸🇬 SG (Singapore) - Fitss
+- name: 🇯🇵 ‍日本
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 100
+  proxies: &id006
+  - 🇯🇵 JP (ToKyo) - Fitss
+- name: 🇺🇸 ‍美国
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
+  tolerance: 300
+  proxies: &id007
+  - 🇺🇸 US (LosAngeles) - Fitss
+- name: 🎏 ‍其他
+  type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 30
+  tolerance: 100
+  proxies: &id008
+  - ℹ️ 💳 前往：csj20.com 购买 - 穿山甲
+  - ℹ️ 💳 前往：csj20.com 购买 - 穿山甲
+  - 🇰🇷 KR (Seoul) - Fitss
+  - 🇮🇳 IN (Mumbai) - Fitss
+  - 🇬🇧 UK (London) - Fitss
+  - 🇪🇸 ES (Madrid) - Fitss
+  - 🇩🇪 DE (Frankfurt) - Fitss
+  - 🇳🇱 NL (Amsterdam) - Fitss
+  - 🇵🇭 PH (Manila) - Fitss
+  - 🇻🇳 VN (Hanoi) - Fitss
+- name: 👆🏻🇭🇰 ‍香港
+  type: select
+  proxies: *id002
+- name: 👆🏻🇹🇼 ‍台湾
+  type: select
+  proxies: *id003
+- name: 👆🏻🇨🇳 ‍中国
+  type: select
+  proxies: *id004
+- name: 👆🏻🇸🇬 ‍新加坡
+  type: select
+  proxies: *id005
+- name: 👆🏻🇯🇵 ‍日本
+  type: select
+  proxies: *id006
+- name: 👆🏻🇺🇸 ‍美国
+  type: select
+  proxies: *id007
+- name: 👆🏻🎏 ‍其他
+  type: select
+  proxies: *id008
+proxies:
+- {name: ℹ️ 💳 前往：csj20.com 购买 - 穿山甲, server: www.csj20.com, port: 8080, type: http, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US (LosAngeles) - Fitss, server: us.1.ss.tjss.me, port: 2310, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇹🇼 TW (China) - Fitss, server: tw.1.ss.tjss.me, port: 55111, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇸🇬 SG (Singapore) - Fitss, server: sg.1.ss.tjss.me, port: 55110, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇰🇷 KR (Seoul) - Fitss, server: kr.1.ss.tjss.me, port: 55112, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇮🇳 IN (Mumbai) - Fitss, server: in.1.ss.tjss.me, port: 55113, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇬🇧 UK (London) - Fitss, server: uk.1.ss.tjss.me, port: 2412, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇪🇸 ES (Madrid) - Fitss, server: es.1.ss.tjss.me, port: 55114, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇩🇪 DE (Frankfurt) - Fitss, server: de.1.ss.tjss.me, port: 55115, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇳🇱 NL (Amsterdam) - Fitss, server: nl.1.ss.tjss.me, port: 55116, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇵🇭 PH (Manila) - Fitss, server: ph.1.ss.tjss.me, port: 55117, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇻🇳 VN (Hanoi) - Fitss, server: vn.1.ss.tjss.me, port: 55118, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇭🇰 HK(China) - Fitss, server: hk.01.ss.tjss.me, port: 2210, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
+- {name: 🇯🇵 JP (ToKyo) - Fitss, server: jp.1.ss.tjss.me, port: 2410, type: ss, cipher: chacha20-ietf-poly1305, password: 479b2f96-da68-47ef-8b07-f7f4f32476f5, udp: true}
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,DIRECT
 - DOMAIN-SUFFIX,ip6-localhost,DIRECT
