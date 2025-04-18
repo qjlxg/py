@@ -15,25 +15,7 @@ import chardet
 
 #试用机场链接
 home_urls =(
-'https://www.nmkjvpn.com',
-'https://tt.yesiamai.com',
-'https://api.nfspeed01.com',
-'http://51.255.173.39',
-'http://huojian2.xyz',
-'https://x2b.eans.top',
-'https://suliannet.cn',
-'https://www.louwangzhiyu.xyz',
-'https://dingmei2.bajie1.me',
-'https://dashuai.us',
-'https://ygl28a.235222.xyz',
-'https://www.chinacmcc.xyz',
-'http://aa.bxox.cc',
-'https://shanhai.me',
-'https://pay.xinghongpay.top',
-'https://api.heima2u.com',
-'https://bobapp.nfspeed01.com',
-'https://cccccc.iyiyun.xyz',
-'https://d58e3582afa99040e27b92b13c8f2280.boluoidc.com',
+
 
 
 )
