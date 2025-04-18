@@ -22,7 +22,7 @@ def get_sub(session: PanelSession, opt: dict, cache: dict[str, list[str]]):
         info, *rest = get(url, suffix) 
     except Exception: 
         origin = urlsplit(session.origin)  # 修复索引访问语法错误，移除不可打印字符
-        url = '|'.join(urlunsplit(origin + urlsplit(part)2:]) for part in url.split('|')) 
+        url = '|'.join(urlunsplit(origin + urlsplit(part)[2:]) for part in url.split('|')) 
         info, *rest = get(url, suffix) 
     cache['sub_url'] = url 
     if not info and hasattr(session, 'get_sub_info'): 
