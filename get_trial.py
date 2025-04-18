@@ -1,10 +1,4 @@
-修复后的源码
-
-以下是对报错信息进行修复后的完整源码，错误发生在函数参数的类型注解上，括号不匹配以及类型注解书写错误。以下是修复后的代码：
-
-markdown
-Copy Code
-```python
+#```python
 import os
 from concurrent.futures import ThreadPoolExecutor
 from datetime import timedelta
@@ -345,5 +339,4 @@ if __name__ == '__main__':
     print('总节点数', total_node_n)
     write_cfg('trial.cache', cache)
 
-markdown
-Copy Code
+
