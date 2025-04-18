@@ -13,7 +13,7 @@ from utils import (clear_files, g0, keep, list_file_paths, list_folder_paths,
  
  
 # 修复函数参数类型注解和括号匹配问题 
-def get_sub(session: PanelSession, opt: dict, cache: dictstr, liststr]]) -> tuple: 
+def get_sub(session: PanelSession, opt: dict, cache: Dict[str, List[str]]) -> tuple: 
     url = cache['sub_url'] 
     suffix = ' - ' + g0(cache, 'name') 
     if 'speed_limit' in opt: 
