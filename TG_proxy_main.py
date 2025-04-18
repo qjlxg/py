@@ -15,7 +15,9 @@ import chardet
 
 #试用机场链接
 home_urls =(
-
+'https://www.nmkjvpn.com',
+'https://tt.yesiamai.com',
+'https://api.nfspeed01.com',
 
 
 )
