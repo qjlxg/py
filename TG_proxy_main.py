@@ -279,7 +279,7 @@ def write_document():
 #获取clash订阅
 def get_yaml():
     print("开始获取clsah订阅")
-    urls = ["https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/clash.yaml",]
+    urls = ['https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/all_clash.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/api.txt','https://raw.githubusercontent.com/qjlxg/aggregator/refs/heads/main/data/transporter.txt']
     n = 1
     for i in urls:
         response = requests.get(i)
