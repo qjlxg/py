@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: b - 买买买, server: b.maimaimai.top, port: 443, type: trojan, password: 02ca6042-b548-46a7-9157-ee97c54f0e4f, skip-cert-verify: true, udp: true}

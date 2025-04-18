@@ -1,5 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇸🇬 新加坡--中转-NF - 老八云, server: gzyd.246680.xyz, port: 43334, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}
-- {name: '🇸🇬 {专线5倍}新加坡-NF - 老八云', server: zx.246680.xyz, port: 54111, type: ss, cipher: chacha20-ietf-poly1305, password: 40ed7e5b-71a6-4572-84b1-435795b966ce, udp: true}

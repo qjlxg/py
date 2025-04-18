@@ -1,8 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇹🇼 🇨🇳ᴛʀ | 臺灣 | 𝟭 | ᴛᴡ⚡ - VNet极速云✈️🚀, server: tw-03.hotfox.fun, port: 58888, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: tw-03.hotfox.fun, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 🇨🇳ᴠ² | 臺灣 | 𝟬 | ᴛᴡ專線✨ - VNet极速云✈️🚀, server: tw-05.hotfox.fun, port: 59993, type: vmess, uuid: f32f46a0-5138-42e0-bde9-52ab18a1f434, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 🇨🇳ᴠ² | 臺灣 | 𝟭 | ᴛᴡ專線✨ - VNet极速云✈️🚀, server: tw-03.hotfox.fun, port: 59999, type: vmess, uuid: f32f46a0-5138-42e0-bde9-52ab18a1f434, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾01直连 - AZ云, server: 2gzdx21.376897.xyz, port: 23342, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 2gzdx21.376897.xyz, skip-cert-verify: true, udp: true}
-- {name: 🇹🇼 台湾03直连 - AZ云, server: tw5.376897.xyz, port: 23342, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: tw5.376897.xyz, skip-cert-verify: true, udp: true}

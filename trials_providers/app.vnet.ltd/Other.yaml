@@ -1,4 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇻🇳ᴛʀ | 東南亞 | sᴠɪᴘ | ɴᴇᴛғɪʟx✨ - VNet极速云✈️🚀, server: hk-01.zzly.xyz, port: 59987, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: vn-00.zzly.xyz, skip-cert-verify: true, udp: true}

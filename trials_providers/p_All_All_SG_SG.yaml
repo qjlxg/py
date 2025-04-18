@@ -1,9 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: 🇸🇬ᴛʀ | 新加坡 | sᴠɪᴘ¹ | 專線✨ - VNet极速云✈️🚀, server: hk-00.denza.xyz, port: 59000, type: vmess, uuid: f32f46a0-5138-42e0-bde9-52ab18a1f434, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬ᴛʀ | 新加坡 | 𝟭 | ɴᴇᴛғɪʟx⚡ - VNet极速云✈️🚀, server: hk-05.hotfox.cc, port: 59979, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: sg-01.wsgss.com, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬ᴛʀ | 新加坡 | 𝟮 | ɴᴇᴛғɪʟx⚡ - VNet极速云✈️🚀, server: hk-05.hotfox.cc, port: 59980, type: trojan, password: f32f46a0-5138-42e0-bde9-52ab18a1f434, sni: sg-02.wsgss.com, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡01隧道快 - AZ云, server: twjpzznew.376897.xyz, port: 22252, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡01隧道4 - AZ云, server: twjpzz2.376897.xyz, port: 31203, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}
-- {name: 🇸🇬 新加坡01隧道5 - AZ云, server: twjpzz2.376897.xyz, port: 13855, tfo: true, type: trojan, password: 2d58eaea-191b-4dbf-af28-1feec6ed3e80, sni: 1azyunsg02b59642a6-326f-46e8-a174-5ae2f1948cc0.767887.xyz, skip-cert-verify: true, udp: true}

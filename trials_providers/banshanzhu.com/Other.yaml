@@ -1,6 +1,0 @@
-%YAML 1.1
----
-proxies:
-- {name: ℹ️ 官网：qlink123.xyz - Qlink, server: c1.yaogougou.me, port: 39001, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
-- {name: 🇬🇧 英国1 - Qlink, server: c1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
-- {name: 🇬🇧 英国2 - Qlink, server: a1.yaogougou.me, port: 39006, type: ss, cipher: chacha20-ietf-poly1305, password: dbf60ab9-1c6a-4f55-bca0-3539a699f7d1, udp: true}
