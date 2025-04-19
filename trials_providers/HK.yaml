@@ -1,0 +1,5 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇭🇰 香港 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇭🇰 香港TJ🍒 - 三七云, server: va.37cloud.cc, port: 22188, type: trojan, password: 51c73bc3-10a3-4980-811b-e2b8ca461442, sni: va.37cloud.cc, skip-cert-verify: true, network: ws, ws-opts: {path: /hd.m3u8, headers: {Host: va.37cloud.cc}}, udp: true}

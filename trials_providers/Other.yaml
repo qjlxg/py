@@ -1,0 +1,40 @@
+%YAML 1.1
+---
+proxies:
+- &id001 {name: ℹ️ 用不了到官网重新导入订阅（最新官网jd.170809.xyz) - 简单云, server: twjpzznew.376897.xyz, port: 22359, tfo: true, type: trojan, password: 8bdf55d5-7a74-47a6-8274-1d501750f3d8, sni: 2jdyun03c0d804c1-65d3-4507-8ef5-c557234fded1.376897.xyz, skip-cert-verify: true, udp: true}
+- &id002 {name: ℹ️ 💳 前往：csj20.com 购买 - 穿山甲, server: www.csj20.com, port: 8080, type: http, tls: false, skip-cert-verify: true, udp: true}
+- {name: ℹ️ ❤官网｜SingLinkVPN.com - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: ℹ️ ❤注册免费送套餐 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: ℹ️ ❤购买Pro计划更快速 - 星连, server: hkg01.dns-node.top, port: 45573, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇰🇷 韩国 - 星连, server: jp01.dns-node.top, port: 45572, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇬🇧 英国 - 星连, server: uk01.dns-node.top, port: 45615, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇲🇾 马来西亚 - 星连, server: sg04.dns-node.top, port: 45610, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇮🇩 印度尼西亚 - 星连, server: sg03.dns-node.top, port: 45608, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇳🇿 新西兰 - 星连, server: sg04.dns-node.top, port: 45611, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇦🇺 澳大利亚 - 星连, server: sg03.dns-node.top, port: 45607, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇵🇰 巴基斯坦 - 星连, server: sg03.dns-node.top, port: 45800, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇦🇹 奥地利 - 星连, server: eu.dns-node.top, port: 43800, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇩🇪 德国 - 星连, server: eu.dns-node.top, port: 45594, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇪🇬 埃及 - 星连, server: eu.dns-node.top, port: 45595, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇫🇷 法国 - 星连, server: eu.dns-node.top, port: 45597, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇮🇳 印度 - 星连, server: eu.dns-node.top, port: 45598, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇳🇬 尼日利亚 - 星连, server: eu.dns-node.top, port: 45601, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇹🇷 土耳其 - 星连, server: eu.dns-node.top, port: 45602, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇦🇷 阿根廷 - 星连, server: us_nord.dns-node.top, port: 45583, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇧🇷 巴西 - 星连, server: us03.dns-node.top, port: 45585, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- {name: 🇨🇦 加拿大 - 星连, server: us_nord.dns-node.top, port: 45586, type: ss, cipher: aes-128-gcm, password: 90465509-a2f1-4d0f-b5a6-fa91d09d139e, udp: true}
+- *id001
+- *id002
+- *id002
+- *id001
+- {name: 影视线路 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路1 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路2 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路3 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路4 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路5 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- *id002
+- {name: 🇷🇺 俄罗斯Tj🍒 - 三七云, server: els.37cloud.cc, port: 28176, type: trojan, password: 51c73bc3-10a3-4980-811b-e2b8ca461442, sni: els.37cloud.cc, skip-cert-verify: true, network: ws, ws-opts: {path: /hd.m3u8, headers: {Host: els.37cloud.cc}}, udp: true}
+- {name: ℹ️ 🍀优先使用hy、VL节点，其他协议将淘汰 - 三七云, server: txjptj.681687.xyz, port: 10091, type: trojan, password: 51c73bc3-10a3-4980-811b-e2b8ca461442, sni: txjptj.681687.xyz, skip-cert-verify: true, network: ws, ws-opts: {path: /hd.m3u8, headers: {Host: txjptj.681687.xyz}}, udp: true}
+- *id001
+- *id002

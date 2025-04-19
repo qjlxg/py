@@ -1,0 +1,4 @@
+%YAML 1.1
+---
+proxies:
+- {name: 🇺🇸 美国洛杉矶1 - V2Board, server: 149.28.76.249, port: 10081, type: ss, cipher: chacha20-ietf-poly1305, password: 82610b2c-ad30-490f-9fca-be41f8a4c695, udp: true}

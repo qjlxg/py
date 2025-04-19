@@ -1,0 +1,9 @@
+%YAML 1.1
+---
+proxies:
+- {name: 影视线路 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路1 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路2 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路3 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路4 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}
+- {name: 影视线路5 - 火箭极速版, server: 8.140.195.167, port: 50005, type: ss, cipher: chacha20-ietf-poly1305, password: 57d2f978-30b0-4026-93cb-e8080618891f, udp: true}

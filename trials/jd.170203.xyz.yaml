@@ -11,56 +11,31 @@ proxy-groups:
   proxies:
   - ⚡ ‍低延迟
   - 👆🏻 ‍指定
-  - 🇭🇰 ‍香港
   - 🇹🇼 ‍台湾
-  - 🇨🇳 ‍中国
   - 🇸🇬 ‍新加坡
   - 🇯🇵 ‍日本
-  - 🇺🇸 ‍美国
   - 🎏 ‍其他
-  - 👆🏻🇭🇰 ‍香港
   - 👆🏻🇹🇼 ‍台湾
-  - 👆🏻🇨🇳 ‍中国
   - 👆🏻🇸🇬 ‍新加坡
   - 👆🏻🇯🇵 ‍日本
-  - 👆🏻🇺🇸 ‍美国
   - 👆🏻🎏 ‍其他
   - DIRECT
   - REJECT
 - name: ⚡ ‍低延迟
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 30
   tolerance: 100
-  use: &id001
-  - HK
-  - US
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_Other
-  - p_All_TW_CN
-  - p_All_JP
-  - p_All_SG
+  proxies: &id001
+  - 🇹🇼 台湾01直连 - 简单云
+  - 🇹🇼 台湾02直连 - 简单云
+  - 🇸🇬 新加坡05中转 - 简单云
+  - 🇯🇵 日本03中转快 - 简单云
+  - 🇯🇵 日本03中转1 - 简单云
+  - ℹ️ 用不了到官网重新导入订阅（最新官网jd.170809.xyz) - 简单云
 - name: 👆🏻 ‍指定
   type: select
-  use: *id001
+  proxies: *id001
 - name: 🛩️ ‍墙内
   type: select
   proxies:
@@ -77,24 +52,18 @@ proxy-groups:
   type: select
   proxies:
   - 🛩️ ‍墙内
-  - 🇭🇰 ‍香港
   - 🇹🇼 ‍台湾
-  - 🇨🇳 ‍中国
   - ✈️ ‍起飞
-  - 👆🏻🇭🇰 ‍香港
   - 👆🏻🇹🇼 ‍台湾
-  - 👆🏻🇨🇳 ‍中国
   - 👆🏻 ‍指定
 - name: 🤖 ‍AI
   type: select
   proxies:
-  - 🇺🇸 ‍美国
   - 🇹🇼 ‍台湾
   - 🇸🇬 ‍新加坡
   - 🇯🇵 ‍日本
   - 🎏 ‍其他
   - ✈️ ‍起飞
-  - 👆🏻🇺🇸 ‍美国
   - 👆🏻🇹🇼 ‍台湾
   - 👆🏻🇸🇬 ‍新加坡
   - 👆🏻🇯🇵 ‍日本
@@ -107,188 +76,55 @@ proxy-groups:
   - ✈️ ‍起飞
   - 🛩️ ‍墙内
   - 💩 ‍广告
-- name: 🇭🇰 ‍香港
-  type: url-test
-  tolerance: 100
-  use: &id002
-  - HK
 - name: 🇹🇼 ‍台湾
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
   tolerance: 100
-  use: &id003
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_TW_CN
-- name: 🇨🇳 ‍中国
-  type: url-test
-  tolerance: 100
-  use: &id004
-  - HK
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN
-  - p_All_TW_CN
+  proxies: &id002
+  - 🇹🇼 台湾01直连 - 简单云
+  - 🇹🇼 台湾02直连 - 简单云
 - name: 🇸🇬 ‍新加坡
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
   tolerance: 100
-  use: &id005
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_All_All_All_SG_SG_SG_SG
-  - p_All_SG
+  proxies: &id003
+  - 🇸🇬 新加坡05中转 - 简单云
 - name: 🇯🇵 ‍日本
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 15
   tolerance: 100
-  use: &id006
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_All_All_All_JP_JP_JP_JP
-  - p_All_JP
-- name: 🇺🇸 ‍美国
-  type: url-test
-  tolerance: 300
-  use: &id007
-  - US
+  proxies: &id004
+  - 🇯🇵 日本03中转快 - 简单云
+  - 🇯🇵 日本03中转1 - 简单云
 - name: 🎏 ‍其他
   type: url-test
+  url: https://i.ytimg.com/generate_204
+  interval: 30
   tolerance: 100
-  use: &id008
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_Other
-- name: 👆🏻🇭🇰 ‍香港
-  type: select
-  use: *id002
+  proxies: &id005
+  - ℹ️ 用不了到官网重新导入订阅（最新官网jd.170809.xyz) - 简单云
 - name: 👆🏻🇹🇼 ‍台湾
   type: select
-  use: *id003
-- name: 👆🏻🇨🇳 ‍中国
-  type: select
-  use: *id004
+  proxies: *id002
 - name: 👆🏻🇸🇬 ‍新加坡
   type: select
-  use: *id005
+  proxies: *id003
 - name: 👆🏻🇯🇵 ‍日本
   type: select
-  use: *id006
-- name: 👆🏻🇺🇸 ‍美国
-  type: select
-  use: *id007
+  proxies: *id004
 - name: 👆🏻🎏 ‍其他
   type: select
-  use: *id008
-proxy-providers:
-  HK:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/HK.yaml
-    interval: 180
-    path: trials_providers/HK.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  US:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/US.yaml
-    interval: 180
-    path: trials_providers/US.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_All_All_All_Other_Other_Other_Other:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_Other_Other_Other_Other.yaml
-    interval: 180
-    path: trials_providers/p_All_All_All_All_Other_Other_Other_Other.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN.yaml
-    interval: 180
-    path: trials_providers/p_All_All_All_All_TW_TW_TW_TW_CN_CN_CN_CN.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_All_All_All_SG_SG_SG_SG:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_SG_SG_SG_SG.yaml
-    interval: 180
-    path: trials_providers/p_All_All_All_All_SG_SG_SG_SG.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_All_All_All_JP_JP_JP_JP:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_JP_JP_JP_JP.yaml
-    interval: 180
-    path: trials_providers/p_All_All_All_All_JP_JP_JP_JP.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_All_All_All_All_Other_Other_Other_Other_Other:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_All_Other_Other_Other_Other_Other.yaml
-    interval: 180
-    path: trials_providers/p_All_All_All_All_All_Other_Other_Other_Other_Other.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_Other:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_Other.yaml
-    interval: 180
-    path: trials_providers/p_All_Other.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_TW_CN:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_TW_CN.yaml
-    interval: 180
-    path: trials_providers/p_All_TW_CN.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_JP:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_JP.yaml
-    interval: 180
-    path: trials_providers/p_All_JP.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
-  p_All_SG:
-    type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_SG.yaml
-    interval: 180
-    path: trials_providers/p_All_SG.yaml
-    health-check:
-      enable: true
-      url: https://i.ytimg.com/generate_204
-      interval: 30
+  proxies: *id005
+proxies:
+- {name: ℹ️ 用不了到官网重新导入订阅（最新官网jd.170809.xyz) - 简单云, server: twjpzznew.376897.xyz, port: 22359, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: 2jdyun03c0d804c1-65d3-4507-8ef5-c557234fded1.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾01直连 - 简单云, server: tw7.376897.xyz, port: 2324, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: tw7.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇹🇼 台湾02直连 - 简单云, server: tw1.376897.xyz, port: 2324, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: tw1.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇸🇬 新加坡05中转 - 简单云, server: twjpzznew.376897.xyz, port: 35828, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: 2jdyun03c0d804c1-65d3-4507-8ef5-c557234fded1.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本03中转快 - 简单云, server: twjpzznew.376897.xyz, port: 64420, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: 2jdyunjp039c5fedcd-4ecb-8b2f-37fd-9fd9388ed95e.376897.xyz, skip-cert-verify: true, udp: true}
+- {name: 🇯🇵 日本03中转1 - 简单云, server: twjpzz2.376897.xyz, port: 38327, type: trojan, password: adfbc1b3-9fec-454d-8a68-8338f1eadb4c, sni: 2jdyunjp039c5fedcd-4ecb-8b2f-37fd-9fd9388ed95e.376897.xyz, skip-cert-verify: true, udp: true}
 rules:
 - DOMAIN-SUFFIX,acl4.ssr,DIRECT
 - DOMAIN-SUFFIX,ip6-localhost,DIRECT
