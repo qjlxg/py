@@ -1,5 +1,0 @@
-%YAML 1.1
----
-proxies:
-- &id001 {name: 🇯🇵 日本-自用 - Wink, server: jp.xaa.app, port: 443, type: trojan, password: 04509531-9afd-4038-a536-c54ae85cc81b, sni: jp.xaa.app, skip-cert-verify: true, udp: true}
-- *id001
