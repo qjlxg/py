@@ -1,0 +1,7 @@
+%YAML 1.1
+---
+proxies:
+- &id001 {name: 🇸🇬 新加坡-ss2 - Wink, server: sg3.xaa.app, port: 9527, type: ss, cipher: chacha20-ietf-poly1305, password: 04509531-9afd-4038-a536-c54ae85cc81b, udp: true}
+- &id002 {name: 🇸🇬 新加坡-ss3 - Wink, server: sg2.xaa.app, port: 9527, type: ss, cipher: chacha20-ietf-poly1305, password: 04509531-9afd-4038-a536-c54ae85cc81b, udp: true}
+- *id001
+- *id002

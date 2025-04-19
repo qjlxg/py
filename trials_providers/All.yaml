@@ -1,0 +1,26 @@
+%YAML 1.1
+---
+proxies:
+- &id001 {name: 🇸🇬 新加坡-ss2 - Wink, server: sg3.xaa.app, port: 9527, type: ss, cipher: chacha20-ietf-poly1305, password: 04509531-9afd-4038-a536-c54ae85cc81b, udp: true}
+- &id002 {name: 🇸🇬 新加坡-ss3 - Wink, server: sg2.xaa.app, port: 9527, type: ss, cipher: chacha20-ietf-poly1305, password: 04509531-9afd-4038-a536-c54ae85cc81b, udp: true}
+- &id003 {name: 🇺🇸 美国rn1-快速 - Wink, server: us-rn1.xaa.app, port: 443, type: trojan, password: 04509531-9afd-4038-a536-c54ae85cc81b, sni: us-rn1.xaa.app, skip-cert-verify: true, udp: true}
+- &id004 {name: 🇺🇸 美国rn2-快速 - Wink, server: us-rn2.xaa.app, port: 443, type: trojan, password: 04509531-9afd-4038-a536-c54ae85cc81b, sni: us-rn2.xaa.app, skip-cert-verify: true, udp: true}
+- &id005 {name: 🇺🇸 美国rn3-高速 - Wink, server: us-rn3.xaa.app, port: 443, type: trojan, password: 04509531-9afd-4038-a536-c54ae85cc81b, sni: us-rn3.xaa.app, skip-cert-verify: true, udp: true}
+- &id006 {name: 🇯🇵 日本-自用 - Wink, server: jp.xaa.app, port: 443, type: trojan, password: 04509531-9afd-4038-a536-c54ae85cc81b, sni: jp.xaa.app, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US| Trojan - V2Board, server: test.api-aws.com, port: 443, type: trojan, password: 5db8bc75-d88f-4100-85e4-603324c98f5f, sni: test.api-aws.com, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US| Shadowsocks - V2Board, server: 38.130.98.152, port: 23655, type: ss, cipher: aes-256-gcm, password: 5db8bc75-d88f-4100-85e4-603324c98f5f, udp: true}
+- {name: 🇺🇸 US| V2ray TCP - V2Board, server: 38.130.98.152, port: 8843, type: vmess, uuid: 5db8bc75-d88f-4100-85e4-603324c98f5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+- {name: 🇺🇸 US| V2ray+gRPC - V2Board, server: test.api-aws.com, port: 8443, type: vmess, uuid: 5db8bc75-d88f-4100-85e4-603324c98f5f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: test.api-aws.com, network: grpc, grpc-opts: {grpc-service-name: web}, udp: true}
+- {name: 🇺🇸 US| VLESS+gRPC (GET ERROR MSG) - V2Board, server: dc6.api-aws.com, port: 8443, type: vmess, uuid: 5db8bc75-d88f-4100-85e4-603324c98f5f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: dc6.api-aws.com, network: grpc, grpc-opts: {grpc-service-name: webinar}, udp: true}
+- {name: 🇺🇸 US| VMESS+Websocket (ERROR RESTY Get) - V2Board, server: 38.126.114.213, port: 23552, type: vmess, uuid: 5db8bc75-d88f-4100-85e4-603324c98f5f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
+- {name: 🇹🇱 US| VMESS+WS+TLS (ERROR RESTY Get) - V2Board, server: dc6.api-aws.com, port: 443, type: vmess, uuid: 5db8bc75-d88f-4100-85e4-603324c98f5f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: dc6.api-aws.com, network: ws, ws-opts: {path: /v2ray, headers: {Host: dc6.api-aws.com}}, udp: true}
+- *id001
+- *id002
+- *id003
+- *id004
+- *id005
+- *id006
+- &id007 {name: 🇭🇰 香港HGC-1000M可奈飞 迪士尼 油管 - pg娱乐电子游戏平台官方版-IOS/最新版/官方版/手机版/手机app下载, server: hkt.littleqqq.co, port: 20759, type: vmess, uuid: d2449028-6f38-43a1-ad01-18f278b30175, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: hkt.littleqqq.co}}, udp: true}
+- &id008 {name: 🇭🇰 香港HGC-1000M可奈飞 迪士尼 油管 - pg娱乐电子游戏平台官方版-IOS/最新版/官方版/手机版/手机app下载 2, server: hkt.littleqqq.co, port: 20759, type: vmess, uuid: d2449028-6f38-43a1-ad01-18f278b30175, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: hkt.littleqqq.co}}, udp: true}
+- *id007
+- *id008
