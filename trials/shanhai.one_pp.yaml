@@ -21,16 +21,8 @@ proxy-groups:
   type: url-test
   tolerance: 100
   use: &id001
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
+  - US
+  - Other
 - name: 👆🏻 ‍指定
   type: select
   use: *id001
@@ -72,20 +64,12 @@ proxy-groups:
   type: url-test
   tolerance: 300
   use: &id002
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
-  - p_All_All_All_All_All_US_US_US_US_US
+  - US
 - name: 🎏 ‍其他
   type: url-test
   tolerance: 100
   use: &id003
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
-  - p_All_All_All_All_All_Other_Other_Other_Other_Other
+  - Other
 - name: 👆🏻🇺🇸 ‍美国
   type: select
   use: *id002
@@ -93,20 +77,20 @@ proxy-groups:
   type: select
   use: *id003
 proxy-providers:
-  p_All_All_All_All_All_US_US_US_US_US:
+  US:
     type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_All_US_US_US_US_US.yaml
+    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/shanhai.one/US.yaml
     interval: 180
-    path: trials_providers/p_All_All_All_All_All_US_US_US_US_US.yaml
+    path: trials_providers/shanhai.one/US.yaml
     health-check:
       enable: true
       url: https://i.ytimg.com/generate_204
       interval: 30
-  p_All_All_All_All_All_Other_Other_Other_Other_Other:
+  Other:
     type: http
-    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/p_All_All_All_All_All_Other_Other_Other_Other_Other.yaml
+    url: https://raw.kgithub.com/qjlxg/aggregator/main/trials_providers/shanhai.one/Other.yaml
     interval: 180
-    path: trials_providers/p_All_All_All_All_All_Other_Other_Other_Other_Other.yaml
+    path: trials_providers/shanhai.one/Other.yaml
     health-check:
       enable: true
       url: https://i.ytimg.com/generate_204
